@@ -1,34 +1,12 @@
 import { useEffect, useState } from "react"
 import "./Projects.css"
 import { ProjectFilter } from "./ProjectFilter"
-import { getAllLevels, getAllProjects, getAllTypes } from "../../services/projectService"
 import { Project } from "./Project"
 
-export const AllProjects = () => {
-    const [allProjects, setAllProjects] = useState([])
-    const [allTypes, setAllTypes] = useState([])
-    const [allLevels, setAllLevels] = useState([])
+export const AllProjects = ({ currentUser, allProjects, allTypes, allLevels }) => {
     const [selectType, setSelectType] = useState("")
     const [selectLevel, setSelectLevel] = useState("")
     const [filteredProjects, setFilteredProjects] = useState([])
-
-    const getAndSetAllProjects = () => {
-        getAllProjects().then(projectArray => { setAllProjects(projectArray) })
-    }
-
-    const getAndSetAllTypes = () => {
-        getAllTypes().then(typeArray => { setAllTypes(typeArray) })
-    }
-
-    const getAndSetAllLevels = () => {
-        getAllLevels().then(levelArray => { setAllLevels(levelArray) })
-    }
-
-    useEffect(() => {
-        getAndSetAllProjects()
-        getAndSetAllTypes()
-        getAndSetAllLevels()
-    }, [])
 
     useEffect(() => {
         let foundProjects = allProjects
@@ -50,7 +28,7 @@ export const AllProjects = () => {
             <ProjectFilter allTypes={allTypes} allLevels={allLevels} setSelectType={setSelectType} setSelectLevel={setSelectLevel} />
                 <article className="projects">
                     {filteredProjects.map((project) => {
-                        return <Project project={project} key={project.id} />
+                        return <Project currentUser={currentUser} project={project} key={project.id} />
                     })}
                 </article>
         </div>

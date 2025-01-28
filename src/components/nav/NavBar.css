@@ -1,11 +1,11 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    background-color: black;
+    background-color: #4B4A67;
     margin: 0;
     width: 100%;
     padding: 15px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #908eac;
     font-weight: bold;
     justify-content: space-around;
   }
@@ -22,7 +22,7 @@
     text-decoration: none;
     color: black;
     padding: 8px 12px;
-    background-color: darkturquoise;
+    background-color: #908eac;
     border-radius: 5px;
   }
 
@@ -31,5 +31,5 @@
   }
 
   .navbar-link:hover {
-    border: 2px solid white;
+    box-shadow: 0 0 10px black;
   }
