@@ -1,0 +1,48 @@
+.projects-container {
+    margin: 10px;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    text-shadow: -2px 2px 2px white;
+}
+
+.project-filter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+    align-items: center;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    color: darkturquoise;
+    border-radius: 20px;
+    box-shadow: -2px 2px 3px white;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.project-info {
+    padding: 5px;
+}
+
+.info-title {
+    font-weight: bold;
+}

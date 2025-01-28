@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    margin: 0;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 3px solid white;
+    font-weight: bold;
+    justify-content: space-around;
+  }
+
+  .navbar-item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    margin: 10px;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    background-color: darkturquoise;
+    border-radius: 5px;
+  }
+
+  .navbar-logout {
+    margin-left: auto;
+  }
+
+  .navbar-link:hover {
+    border: 2px solid white;
+  }
