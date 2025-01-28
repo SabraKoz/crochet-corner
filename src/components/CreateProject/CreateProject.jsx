@@ -39,9 +39,9 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
     }
 
     return (
-        <form>
+        <form className="project-form">
             <h1>Create New Project</h1>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Title: </label>
                     <input
@@ -52,7 +52,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Type: </label>
                     <select 
@@ -65,7 +65,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Difficulty Level: </label>
                     <select 
@@ -78,7 +78,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Skeins: </label>
                     <input 
@@ -89,7 +89,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Yarn Weight: </label>
                     <input 
@@ -100,7 +100,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Hook Size: </label>
                     <input
@@ -111,7 +111,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Instructions: </label>
                     <input
@@ -122,7 +122,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <button type="submit" onClick={handleSubmit}>Submit Project</button>
+            <button className="btn" type="submit" onClick={handleSubmit}>Submit Project</button>
         </form>
     )
 }

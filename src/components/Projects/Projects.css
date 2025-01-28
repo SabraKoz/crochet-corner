@@ -20,7 +20,7 @@ h1 {
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px;
+    margin: 50px;
     align-items: center;
 }
 
@@ -29,8 +29,14 @@ h1 {
     padding: 20px;
     background-color: #908eac;
     color: black;
+    border: 2px solid #4B4A67;
     border-radius: 20px;
     box-shadow: -2px 2px 4px #4B4A67;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
 }
 
 .project-title {

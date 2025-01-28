@@ -44,9 +44,9 @@ export const EditProject = ({ allTypes, allLevels }) => {
     }
 
     return (
-        <form>
+        <form className="project-form">
             <h1>Edit Project</h1>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Title: </label>
                     <input
@@ -57,10 +57,11 @@ export const EditProject = ({ allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Type: </label>
                     <select 
+                        name="typeId"
                         value={editProject.typeId}
                         onChange={handleInputChange}>
                         <option value="" >Select Type</option>
@@ -70,10 +71,11 @@ export const EditProject = ({ allTypes, allLevels }) => {
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Difficulty Level: </label>
                     <select 
+                        name="levelId"
                         value={editProject.levelId}
                         onChange={handleInputChange}>
                         <option value="" >Select Level</option>
@@ -83,7 +85,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
                     </select>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Skeins: </label>
                     <input 
@@ -94,7 +96,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Yarn Weight: </label>
                     <input 
@@ -105,7 +107,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Hook Size: </label>
                     <input
@@ -116,7 +118,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="project-fieldset">
                 <div>
                     <label>Instructions: </label>
                     <input
@@ -127,7 +129,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
                         required />
                 </div>
             </fieldset>
-            <button type="submit" onClick={handleSaveProject}>Save</button>
+            <button className="btn" type="submit" onClick={handleSaveProject}>Save</button>
         </form>
     )
 }

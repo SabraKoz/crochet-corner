@@ -22,24 +22,24 @@ export const ProjectDetails = ({ currentUser }) => {
     }, [])
 
     return (
-        <section>
+        <section className="project-details">
             <h1>{project.title}</h1>
-            <div>
-                <span className="detail-title">Creator: </span><Link to={`/profile/${project.user?.id}`} >{project.user?.name}</Link>
-                <span className="detail-title">Likes: </span>{project.userProjectLikes?.length}
+            <div className="detail-top">
+                <div className="details"><span className="detail-title">Creator: </span><Link to={`/profile/${project.user?.id}`} className="creator-link" >{project.user?.name}</Link></div>
+                <div className="details"><span className="detail-title">Likes: </span>{project.userProjectLikes?.length}</div>
             </div>
-            <div>
-                <span className="detail-title">Type: </span>{project.type?.name}
-                <span className="detail-title">Difficulty Level: </span>{project.level?.name}
-                <span className="detail-title">Skeins: </span>{project.skeins}
-                <span className="detail-title">Yarn Weight: </span>{project.weight}
-                <span className="detail-title">Hook Size: </span>{project.hook}
+            <div className="detail-main">
+                <div className="details"><span className="detail-title">Type: </span>{project.type?.name}</div>
+                <div className="details"><span className="detail-title">Difficulty Level: </span>{project.level?.name}</div>
+                <div className="details"><span className="detail-title">Skeins: </span>{project.skeins}</div>
+                <div className="details"><span className="detail-title">Yarn Weight: </span>{project.weight}</div>
+                <div className="details"><span className="detail-title">Hook Size: </span>{project.hook}</div>
             </div>
-            <div>
-                {project.body}
+            <div className="detail-body">
+                <span className="detail-title" >Instructions: </span>{project.body}
             </div>
                 {currentUser.id === project.userId ? (
-                        <button onClick={() => {navigate(`/projects/${projectId}/edit`)}} >Edit</button>
+                        <button className="btn" onClick={() => {navigate(`/projects/${projectId}/edit`)}} >Edit</button>
                     ) : ('')}
         </section>
     )

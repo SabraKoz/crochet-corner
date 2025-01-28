@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { getUserById } from "../../services/userService"
 import { deleteProject, getUserProjects } from "../../services/projectService"
 import { Project } from "../Projects/Project"
-
+import "./User.css"
 
 export const Profile = ({ currentUser }) => {
     const [user, setUser] = useState([])
@@ -37,7 +37,7 @@ export const Profile = ({ currentUser }) => {
     return (
         <section>
             <h1>{user.name}'s Projects</h1>
-            <div>
+            <div className="profile-projects">
                 {userProjects.map(project => (<Project key={project.id} project={project} showDelete={true} onDelete={handleDeleteProject} /> ))}
             </div>
         </section>
