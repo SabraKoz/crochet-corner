@@ -9,6 +9,9 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete }
             <Link to={`/projects/${project.id}`} className="project-link">
             <header className="project-title">{project.title}</header>
             <div className="project-info">
+                <span className="info-title">Creator: </span>{project.user?.name}
+            </div>
+            <div className="project-info">
                 <span className="info-title">Type: </span>{project.type?.name}
             </div>
             <div className="project-info">

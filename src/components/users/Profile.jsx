@@ -38,7 +38,15 @@ export const Profile = ({ currentUser }) => {
         <section>
             <h1>Projects Created by {user.name}</h1>
             <div className="profile-projects">
-                {userProjects.map(project => (<Project key={project.id} project={project} currentUser={currentUser} showEdit={true} showDelete={true} onDelete={handleDeleteProject} /> ))}
+                {userProjects.map(project => (
+                    <Project 
+                        key={project.id} 
+                        project={project} 
+                        currentUser={currentUser} 
+                        showEdit={true} 
+                        showDelete={true} 
+                        onDelete={handleDeleteProject} /> 
+                    ))}
             </div>
         </section>
     )

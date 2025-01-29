@@ -3,6 +3,9 @@ import "./ProjectDetails.css"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { getProjectById } from "../../services/projectService"
 import { likeProject, unlikeProject } from "../../services/userService"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
+import { faHeart as faRegularHeart } from "@fortawesome/free-regular-svg-icons"
 
 export const ProjectDetails = ({ currentUser }) => {
     const [project, setProject] = useState([])
@@ -54,11 +57,22 @@ export const ProjectDetails = ({ currentUser }) => {
         <section className="project-details">
             <h1>{project.title}</h1>
             <div className="detail-top">
-                <div className="details"><span className="detail-title">Creator: </span><Link to={`/profile/${project.user?.id}`} className="creator-link" >{project.user?.name}</Link></div>
-                <div className="details"><span className="detail-title">Likes: </span>{project.userProjectLikes?.length}</div>
+                <div className="details">
+                    <span className="detail-title">Creator: </span>
+                    <Link to={`/profile/${project.user?.id}`} className="creator-link" >{project.user?.name}</Link>
+                </div>
+                <div className="details">
+                    <span className="detail-title">Likes: </span>
+                    {project.userProjectLikes?.length}
+                </div>
                 {currentUser.id === project.userId ? (
                         <button className="btn" onClick={() => {navigate(`/projects/${projectId}/edit`)}} >Edit</button>
-                    ) : (hasLiked ? (<button onClick={handleUnlike} className="btn">Unlike</button>) : (<button onClick={handleLike} className="btn">Like</button>))}
+                    ) : (
+                        hasLiked ? (
+                            <button onClick={handleUnlike} className="btn"><FontAwesomeIcon icon={faSolidHeart} /></button>
+                        ) : (
+                            <button onClick={handleLike} className="btn"><FontAwesomeIcon icon={faRegularHeart} /></button>
+                            ))}
             </div>
             <div className="detail-main">
                 <div className="details-main"><span className="detail-title">Type: </span>{project.type?.name}</div>
