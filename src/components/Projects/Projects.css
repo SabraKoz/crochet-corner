@@ -51,4 +51,12 @@ h1 {
 
 .info-title {
     font-weight: bold;
+    padding: 5px;
+}
+
+.select-dropdown {
+    background-color: #4B4A67;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
 }
