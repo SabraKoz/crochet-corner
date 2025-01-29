@@ -30,15 +30,15 @@ export const Profile = ({ currentUser }) => {
 
     const handleDeleteProject = (projectId) => {
         deleteProject(projectId).then(() => {
-            getAndSetUserProjects(userProjects)
+            getAndSetUserProjects()
         })
     }
 
     return (
         <section>
-            <h1>{user.name}'s Projects</h1>
+            <h1>Projects Created by {user.name}</h1>
             <div className="profile-projects">
-                {userProjects.map(project => (<Project key={project.id} project={project} showDelete={true} onDelete={handleDeleteProject} /> ))}
+                {userProjects.map(project => (<Project key={project.id} project={project} currentUser={currentUser} showEdit={true} showDelete={true} onDelete={handleDeleteProject} /> ))}
             </div>
         </section>
     )

@@ -17,7 +17,16 @@ export const createUser = (user) => {
   }
 
   export const getUserLikedProjects = (userId) => {
-    return fetch(`http://localhost:8088/userProjectLikes?userId=${userId}&_expand=project&_expand=user`).then(res => res.json())
+    return fetch(`http://localhost:8088/userProjectLikes?userId=${userId}&_expand=project&_expand=user`)
+        .then(res => res.json())
+        .then((likedProjects) => {
+            const projectIds = likedProjects.map((like) => like.project.id)
+            return fetch(`http://localhost:8088/projects?id=${projectIds.join("&id=")}&_expand=type&_expand=level&_expand=user&_embed=userProjectLikes`)
+                .then(res => res.json())
+                .then((fullProjects) => {
+                    return likedProjects.map((like) => ({...like, project: fullProjects.find((p) => p.id === like.project.id),}))
+                })
+        })
   }
 
 export const likeProject = (like) => {

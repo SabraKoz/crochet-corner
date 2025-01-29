@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
-export const Project = ({ currentUser, project, showDelete, onDelete }) => {
+export const Project = ({ currentUser, project, showEdit, showDelete, onDelete }) => {
+
+    const navigate = useNavigate()
 
     return (
         <section className="project">
-            <Link to={`/projects/${project?.id}`} className="project-link">
-            <header className="project-title">{project?.title}</header>
+            <Link to={`/projects/${project.id}`} className="project-link">
+            <header className="project-title">{project.title}</header>
             <div className="project-info">
                 <span className="info-title">Type: </span>{project.type?.name}
             </div>
@@ -16,7 +18,12 @@ export const Project = ({ currentUser, project, showDelete, onDelete }) => {
                 <span className="info-title">Number of Likes: </span>{project.userProjectLikes?.length}
             </div>
             </Link>
-            {currentUser?.id === project.user?.id && showDelete ? (<button onClick={() => onDelete(project.id)}>Delete</button>) : ('')}
+            {currentUser?.id === project.user?.id && showEdit && showDelete ? (
+                <div>
+                    <button onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</button>
+                    <button onClick={() => onDelete(project.id)} className="btn">Delete</button>
+                </div>
+            ) : ('')}
         </section>
     )
 }
