@@ -23,7 +23,12 @@
 }
 
 .details {
-    margin: 10px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.details-main {
+    margin: 20px;
 }
 
 .detail-body {

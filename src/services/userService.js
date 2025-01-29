@@ -19,3 +19,19 @@ export const createUser = (user) => {
   export const getUserLikedProjects = (userId) => {
     return fetch(`http://localhost:8088/userProjectLikes?userId=${userId}&_expand=project&_expand=user`).then(res => res.json())
   }
+
+export const likeProject = (like) => {
+    return fetch(`http://localhost:8088/userProjectLikes`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(like)
+    })
+}
+
+export const unlikeProject = (projectId) => {
+    return fetch(`http://localhost:8088/userProjectLikes/${projectId}`, {
+        method: "DELETE",
+    })
+}
