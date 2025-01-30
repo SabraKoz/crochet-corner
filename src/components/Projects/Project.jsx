@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 
-export const Project = ({ currentUser, project, showEdit, showDelete, onDelete }) => {
+export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, showComplete, onToggleComplete, isComplete }) => {
 
     const navigate = useNavigate()
 
@@ -26,6 +26,9 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete }
                     <button onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</button>
                     <button onClick={() => onDelete(project.id)} className="btn">Delete</button>
                 </div>
+            ) : ('')}
+            {showComplete ? (
+                <button onClick={onToggleComplete} className="btn"> {isComplete ? "Project Goals" : "Completed!"} </button>
             ) : ('')}
         </section>
     )

@@ -44,3 +44,13 @@ export const unlikeProject = (projectId) => {
         method: "DELETE",
     })
 }
+
+export const editLikedProject = (project) => {
+    return fetch(`http://localhost:8088/userProjectLikes/${project.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(project)
+    })
+}
