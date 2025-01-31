@@ -49,7 +49,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         name="title"
                         value={newTitle}
                         onChange={(event) => setNewTitle(event.target.value)}
-                        required />
+                        required
+                        className="input" />
                 </div>
             </fieldset>
             <fieldset className="project-fieldset">
@@ -57,7 +58,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                     <label>Type: </label>
                     <select 
                         value={newType}
-                        onChange={(event) => setNewType(event.target.value)}>
+                        onChange={(event) => setNewType(event.target.value)}
+                        className="input">
                         <option value="" >Select Type</option>
                         {allTypes.map(type => {
                             return (<option value={type.id} key={type.id}>{type.name}</option>)
@@ -70,7 +72,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                     <label>Difficulty Level: </label>
                     <select 
                         value={newLevel}
-                        onChange={(event) => setNewLevel(event.target.value)}>
+                        onChange={(event) => setNewLevel(event.target.value)}
+                        className="input">
                         <option value="" >Select Level</option>
                         {allLevels.map(level => {
                             return (<option value={level.id} key={level.id}>{level.name}</option>)
@@ -86,7 +89,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         name="skeins"
                         value={newSkeins}
                         onChange={(event) => setNewSkeins(event.target.value)}
-                        required />
+                        required
+                        className="input" />
                 </div>
             </fieldset>
             <fieldset className="project-fieldset">
@@ -97,7 +101,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         name="weight"
                         value={newWeight}
                         onChange={(event) => setNewWeight(event.target.value)}
-                        required />
+                        required
+                        className="input" />
                 </div>
             </fieldset>
             <fieldset className="project-fieldset">
@@ -108,18 +113,20 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                         name="hook"
                         value={newHook}
                         onChange={(event) => setNewHook(event.target.value)}
-                        required />
+                        required
+                        className="input" />
                 </div>
             </fieldset>
             <fieldset className="project-fieldset">
                 <div>
                     <label>Instructions: </label>
-                    <input
+                    <textarea
                         type="text"
                         name="body"
                         value={newBody}
                         onChange={(event) => setNewBody(event.target.value)}
-                        required />
+                        required
+                        className="input-body" />
                 </div>
             </fieldset>
             <button className="btn" type="submit" onClick={handleSubmit}>Submit Project</button>

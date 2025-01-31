@@ -21,3 +21,9 @@
 .btn:hover {
     box-shadow: 0 0 10px #4B4A67;
 }
+
+.input {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #908eac;
+}

@@ -121,7 +121,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
             <fieldset className="project-fieldset">
                 <div>
                     <label>Instructions: </label>
-                    <input
+                    <textarea
                         type="text"
                         name="body"
                         value={editProject.body ? editProject.body : ''}
