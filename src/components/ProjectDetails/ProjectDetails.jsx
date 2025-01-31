@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import "./ProjectDetails.css"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { getProjectById } from "../../services/projectService"
 import { likeProject, unlikeProject } from "../../services/userService"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
 import { faHeart as faRegularHeart } from "@fortawesome/free-regular-svg-icons"
+import { Box, Button, Card, Container, Heading, Text } from "@radix-ui/themes"
 
 export const ProjectDetails = ({ currentUser }) => {
     const [project, setProject] = useState([])
@@ -54,36 +54,37 @@ export const ProjectDetails = ({ currentUser }) => {
     }
 
     return (
-        <section className="project-details">
-            <h1>{project.title}</h1>
-            <div className="detail-top">
-                <div className="details">
-                    <span className="detail-title">Creator: </span>
-                    <Link to={`/profile/${project.user?.id}`} className="creator-link" >{project.user?.name}</Link>
-                </div>
-                <div className="details">
-                    <span className="detail-title">Likes: </span>
+        <Container m="5">
+            <Heading size="7" weight="bold" align="center">{project.title}</Heading>
+            <Box style={{display: "flex", justifyContent: "center", margin: "10px"}}>
+                <Box m="2">
+                    <Text weight="medium" style={{padding: "5px"}}>Creator: </Text>
+                    <Link to={`/profile/${project.user?.id}`} style={{textDecoration: "none", color: "inherit"}} >{project.user?.name}</Link>
+                </Box>
+                <Box m="2">
+                    <Text weight="medium" style={{padding: "5px"}}>Likes: </Text>
                     {project.userProjectLikes?.length}
-                </div>
+                </Box>
                 {currentUser.id === project.userId ? (
-                        <button className="btn" onClick={() => {navigate(`/projects/${projectId}/edit`)}} >Edit</button>
+                        <Button m="1" onClick={() => {navigate(`/projects/${projectId}/edit`)}} >Edit</Button>
                     ) : (
                         hasLiked ? (
-                            <button onClick={handleUnlike} className="btn"><FontAwesomeIcon icon={faSolidHeart} /></button>
+                            <Button m="1" onClick={handleUnlike}><FontAwesomeIcon icon={faSolidHeart} /></Button>
                         ) : (
-                            <button onClick={handleLike} className="btn"><FontAwesomeIcon icon={faRegularHeart} /></button>
+                            <Button m="1" onClick={handleLike}><FontAwesomeIcon icon={faRegularHeart} /></Button>
                             ))}
-            </div>
-            <div className="detail-main">
-                <div className="details-main"><span className="detail-title">Type: </span>{project.type?.name}</div>
-                <div className="details-main"><span className="detail-title">Difficulty Level: </span>{project.level?.name}</div>
-                <div className="details-main"><span className="detail-title">Skeins: </span>{project.skeins}</div>
-                <div className="details-main"><span className="detail-title">Yarn Weight: </span>{project.weight}</div>
-                <div className="details-main"><span className="detail-title">Hook Size: </span>{project.hook}</div>
-            </div>
-            <div className="detail-body">
-                <span className="detail-title" >Instructions: </span>{project.body}
-            </div> 
-        </section>
+            </Box>
+            <Box>
+                <Box m="5"><Text weight="medium">Type: </Text>{project.type?.name}</Box>
+                <Box m="5"><Text weight="medium">Difficulty Level: </Text>{project.level?.name}</Box>
+                <Box m="5"><Text weight="medium">Skeins: </Text>{project.skeins}</Box>
+                <Box m="5"><Text weight="medium">Yarn Weight: </Text>{project.weight}</Box>
+                <Box m="5"><Text weight="medium">Hook Size: </Text>{project.hook}</Box>
+            </Box>
+            <Box m="5">
+                <Text weight="medium" >Instructions: </Text>
+                    <Card m="2" >{project.body}</Card>
+            </Box> 
+        </Container>
     )
 }

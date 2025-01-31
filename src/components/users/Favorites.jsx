@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { editLikedProject, getUserById, getUserLikedProjects } from "../../services/userService"
 import { Project } from "../Projects/Project"
-import "./User.css"
+import { Box, Container, Grid, Heading } from "@radix-ui/themes"
 
 export const Favorites = ({ currentUser }) => {
     const [likedProjects, setLikedProjects] = useState([])
@@ -43,11 +43,11 @@ export const Favorites = ({ currentUser }) => {
     }
 
     return (
-        <section>
-            <h1>{user?.name}'s Favorite Projects</h1>
-            <div className="favorites-container">
-                <div className="favorite-column">
-                    <h2>~ {goalProjects.length} Project Goals ~</h2>
+        <Container m="5">
+            <Heading size="7" weight="bold" align="center">{user?.name}'s Favorite Projects</Heading>
+            <Grid m="5" columns="2" gap="5">
+                <Box >
+                    <Heading size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>
                     {goalProjects.map(like => (
                         <Project 
                             key={like.id}
@@ -57,10 +57,10 @@ export const Favorites = ({ currentUser }) => {
                             isComplete={false}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
                     ))}
-                </div>
-
-                <div className="favorite-column">
-                    <h2>~ {completeProjects.length} Projects Completed ~</h2>
+                </Box>
+    
+                <Box >
+                    <Heading size="6" weight="bold" align="center">{completeProjects.length} Projects Completed</Heading>
                     {completeProjects.map(like => (
                         <Project 
                             key={like.id}
@@ -70,8 +70,8 @@ export const Favorites = ({ currentUser }) => {
                             isComplete={true}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
                     ))}
-                </div>
-            </div>
-        </section>
+                </Box>
+            </Grid>
+        </Container>
     )
 }

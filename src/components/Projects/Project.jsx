@@ -1,3 +1,4 @@
+import { Box, Button, Card, Heading, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
 
 export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, showComplete, onToggleComplete, isComplete }) => {
@@ -5,31 +6,39 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
     const navigate = useNavigate()
 
     return (
-        <section className="project">
-            <Link to={`/projects/${project.id}`} className="project-link">
-            <header className="project-title">{project.title}</header>
-            <div className="project-info">
-                <span className="info-title">Creator: </span>{project.user?.name}
-            </div>
-            <div className="project-info">
-                <span className="info-title">Type: </span>{project.type?.name}
-            </div>
-            <div className="project-info">
-                <span className="info-title">Level: </span>{project.level?.name}
-            </div>
-            <div className="project-info">
-                <span className="info-title">Number of Likes: </span>{project.userProjectLikes?.length}
-            </div>
+        <Card m="2"
+            style={{
+                backgroundColor: "#908EAC"
+                }} >
+            <Link 
+                to={`/projects/${project.id}`}
+                style={{
+                    textDecoration: "none",
+                    color: "inherit"
+                }} >
+            <Heading size="5" weight="bold" >{project.title}</Heading>
+            <Box>
+                <Text weight="medium">Creator: </Text>{project.user?.name}
+            </Box>
+            <Box>
+                <Text weight="medium">Type: </Text>{project.type?.name}
+            </Box>
+            <Box>
+                <Text weight="medium">Level: </Text>{project.level?.name}
+            </Box>
+            <Box>
+                <Text weight="medium">Number of Likes: </Text>{project.userProjectLikes?.length}
+            </Box>
             </Link>
             {currentUser?.id === project.user?.id && showEdit && showDelete ? (
-                <div>
-                    <button onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</button>
-                    <button onClick={() => onDelete(project.id)} className="btn">Delete</button>
-                </div>
+                <Box>
+                    <Button m="1" onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</Button>
+                    <Button m="1" onClick={() => onDelete(project.id)} className="btn">Delete</Button>
+                </Box>
             ) : ('')}
             {showComplete ? (
-                <button onClick={onToggleComplete} className="btn"> {isComplete ? "Project Goals" : "Completed!"} </button>
+                <Button m="1" onClick={onToggleComplete} className="btn"> {isComplete ? "Project Goals" : "Completed!"} </Button>
             ) : ('')}
-        </section>
+        </Card>
     )
 }

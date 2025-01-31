@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { getUserById } from "../../services/userService"
 import { deleteProject, getUserProjects } from "../../services/projectService"
 import { Project } from "../Projects/Project"
-import "./User.css"
+import { Container, Grid, Heading } from "@radix-ui/themes"
 
 export const Profile = ({ currentUser }) => {
     const [user, setUser] = useState([])
@@ -35,9 +35,9 @@ export const Profile = ({ currentUser }) => {
     }
 
     return (
-        <section>
-            <h1>Projects Created by {user.name}</h1>
-            <div className="profile-projects">
+        <Container m="5">
+            <Heading size="7" weight="bold" align="center" >Projects Created by {user.name}</Heading  >
+            <Grid m="5" columns="3" gap="3">
                 {userProjects.map(project => (
                     <Project 
                         key={project.id} 
@@ -47,7 +47,7 @@ export const Profile = ({ currentUser }) => {
                         showDelete={true} 
                         onDelete={handleDeleteProject} /> 
                     ))}
-            </div>
-        </section>
+            </Grid>
+        </Container>
     )
 }
