@@ -1,0 +1,11 @@
+body, #root, .radix-Theme-root {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../pink\ crochet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent !important;
+}
