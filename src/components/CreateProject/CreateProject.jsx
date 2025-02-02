@@ -53,11 +53,11 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Type: </Text>
-                <Select.Root >
+                <Select.Root 
+                    value={newType}
+                    onValueChange={setNewType}>
                     <Select.Trigger placeholder="Select Type" />
-                    <Select.Content
-                        value={newType}
-                        onChange={(event) => setNewType(event.target.value)}>
+                    <Select.Content>
                         <Select.Group>
                             {allTypes.map(type => {
                                 return (<Select.Item value={type.id} key={type.id}>{type.name}</Select.Item>)
@@ -68,11 +68,11 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Difficulty Level: </Text>
-                <Select.Root>
+                <Select.Root 
+                    value={newLevel}
+                    onValueChange={setNewLevel}>
                     <Select.Trigger placeholder="Select Level" />
-                    <Select.Content
-                        value={newLevel}
-                        onChange={(event) => setNewLevel(event.target.value)}>
+                    <Select.Content>
                         <Select.Group>
                             {allLevels.map(level => {
                                 return (<Select.Item value={level.id} key={level.id}>{level.name}</Select.Item>)

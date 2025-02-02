@@ -17,10 +17,19 @@ export const EditProject = ({ allTypes, allLevels }) => {
         })
     }, [projectId])
 
+    // const handleInputChange = (event) => {
+    //     const projectCopy = { ...editProject }
+    //     projectCopy[event.target.name] = event.target.value
+    //     setEditProject(projectCopy)
+    // }
+
     const handleInputChange = (event) => {
-        const projectCopy = { ...editProject }
-        projectCopy[event.target.name] = event.target.value
-        setEditProject(projectCopy)
+        const { name, value } = event.target
+        setEditProject(object => ({...object, [name]: value }))
+    }
+
+    const handleSelectChange = (name, value) => {
+        setEditProject(object => ({...object, [name]: value }))
     }
 
     const handleSaveProject = (event) => {
@@ -58,12 +67,9 @@ export const EditProject = ({ allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Type: </Text>
-                <Select.Root value={editProject.typeId} onValueChange={handleInputChange}>
+                <Select.Root name="typeId" value={editProject.typeId} onValueChange={(value) => handleSelectChange('typeId', value)}>
                 <Select.Trigger />
-                <Select.Content
-                    name="typeId"
-                    value={editProject.typeId}
-                    onChange={handleInputChange}>
+                <Select.Content>
                     <Select.Group>
                     {allTypes.map(type => {
                         return (<Select.Item value={type.id} key={type.id}>{type.name}</Select.Item>)
@@ -74,12 +80,9 @@ export const EditProject = ({ allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Difficulty Level: </Text>
-                <Select.Root value={editProject.levelId} onValueChange={handleInputChange}>
+                <Select.Root name="levelId" value={editProject.levelId} onValueChange={(value) => handleSelectChange('levelId', value)}>
                     <Select.Trigger />
-                <Select.Content
-                    name="levelId"
-                    value={editProject.levelId}
-                    onChange={handleInputChange}>
+                <Select.Content>
                     <Select.Group>
                     {allLevels.map(level => {
                         return (<Select.Item value={level.id} key={level.id}>{level.name}</Select.Item>)
