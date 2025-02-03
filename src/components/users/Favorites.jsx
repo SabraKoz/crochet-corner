@@ -27,19 +27,21 @@ export const Favorites = ({ currentUser }) => {
     }, [currentUser])
 
     useEffect(() => {
-        const complete = likedProjects.filter((project) => project.complete === true)
-        const goal = likedProjects.filter((project) => project.complete === false)
+        const complete = likedProjects.filter((like) => like.complete === true)
+        const goal = likedProjects.filter((like) => like.complete === false)
 
         setCompleteProjects(complete)
         setGoalProjects(goal)
     }, [likedProjects])
 
-    const switchCompleteStatus = (projectId) => {
-        const updatedProjects = likedProjects.map(project => project.id === projectId ? {...project, complete: !project.complete} : project)
+    const switchCompleteStatus = (likeId) => {
+        const updatedProjects = likedProjects.map(
+            like => like.id === likeId ? {...like, complete: !like.complete} : like)
         setLikedProjects(updatedProjects)
 
-        const updatedProject = updatedProjects.find(project => project.id === projectId)
-        editLikedProject(updatedProject)
+        const updatedProject = updatedProjects.find(like => like.id === likeId)
+        const { id, userId, projectId, complete } = updatedProject
+        editLikedProject({ id, userId, projectId, complete })
     }
 
     return (

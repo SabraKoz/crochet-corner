@@ -45,12 +45,13 @@ export const unlikeProject = (projectId) => {
     })
 }
 
-export const editLikedProject = (project) => {
-    return fetch(`http://localhost:8088/userProjectLikes/${project.id}`, {
+export const editLikedProject = (like) => {
+    const { id, userId, projectId, complete } = like
+    return fetch(`http://localhost:8088/userProjectLikes/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(project)
+        body: JSON.stringify({ id, userId, projectId, complete })
     })
 }

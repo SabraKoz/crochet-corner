@@ -12,7 +12,6 @@ root.render(
   <BrowserRouter>
     <Theme accentColor="cyan" grayColor="mauve" panelBackground="translucent" >
       <App />
-      <ThemePanel />
     </Theme>
   </BrowserRouter>
 )
