@@ -20,8 +20,8 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
         const newProject = {
             title: newTitle,
             body: newBody,
-            skeins: newSkeins,
-            weight: newWeight,
+            skeins: parseInt(newSkeins),
+            weight: parseInt(newWeight),
             hook: newHook,
             image: "",
             userId: currentUser.id,
