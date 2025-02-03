@@ -17,12 +17,6 @@ export const EditProject = ({ allTypes, allLevels }) => {
         })
     }, [projectId])
 
-    // const handleInputChange = (event) => {
-    //     const projectCopy = { ...editProject }
-    //     projectCopy[event.target.name] = event.target.value
-    //     setEditProject(projectCopy)
-    // }
-
     const handleInputChange = (event) => {
         const { name, value } = event.target
         setEditProject(object => ({...object, [name]: value }))
@@ -67,7 +61,10 @@ export const EditProject = ({ allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Type: </Text>
-                <Select.Root name="typeId" value={editProject.typeId} onValueChange={(value) => handleSelectChange('typeId', value)}>
+                <Select.Root 
+                    name="typeId" 
+                    value={editProject.typeId} 
+                    onValueChange={(value) => handleSelectChange('typeId', value)}>
                 <Select.Trigger />
                 <Select.Content>
                     <Select.Group>
@@ -80,7 +77,10 @@ export const EditProject = ({ allTypes, allLevels }) => {
             </Box>
             <Box m="3">
                 <Text>Difficulty Level: </Text>
-                <Select.Root name="levelId" value={editProject.levelId} onValueChange={(value) => handleSelectChange('levelId', value)}>
+                <Select.Root 
+                    name="levelId" 
+                    value={editProject.levelId} 
+                    onValueChange={(value) => handleSelectChange('levelId', value)}>
                     <Select.Trigger />
                 <Select.Content>
                     <Select.Group>
