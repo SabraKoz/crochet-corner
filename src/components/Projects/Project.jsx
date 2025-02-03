@@ -8,7 +8,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
     return (
         <Card m="2"
             style={{
-                backgroundColor: "#908EAC"
+                backgroundColor: "#908eac"
                 }} >
             <Link 
                 to={`/projects/${project.id}`}
