@@ -1,5 +1,6 @@
 import { Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
+import blanket from "../../images/v-stitch-blanket.jpg"
 
 export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, showComplete, onToggleComplete, isComplete }) => {
 
@@ -18,7 +19,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                 }} >
             <Inset clip="padding-box" side="top">
                 <img
-                    src={project.image}
+                    src={blanket}
                     alt={project.title}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </Inset>

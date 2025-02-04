@@ -86,7 +86,7 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
             </Box>
             <Box m="5">
                 <Text weight="medium" >Instructions: </Text>
-                    <Card m="2" >{project.body}</Card>
+                    <Card m="2" style={{ whiteSpace: "pre-wrap" }} >{project.body}</Card>
             </Box> 
             </Box>
         </Container>
