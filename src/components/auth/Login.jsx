@@ -30,6 +30,7 @@ export const Login = () => {
 
   return (
     <Container>
+      <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
       <form onSubmit={handleLogin}>
         <Heading size="8" align="center" m="7">Crochet Corner</Heading>
         <Heading size="5" align="center" m="3">Please sign in</Heading>
@@ -49,6 +50,7 @@ export const Login = () => {
       </form>
       <Box m="3" style={{ display: "flex", justifyContent: "center" }} >
         <Link to="/register">Not a member yet?</Link>
+      </Box>
       </Box>
     </Container>
   )

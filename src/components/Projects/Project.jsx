@@ -1,4 +1,4 @@
-import { Box, Button, Card, Heading, Text } from "@radix-ui/themes"
+import { Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
 
 export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, showComplete, onToggleComplete, isComplete }) => {
@@ -8,7 +8,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
     return (
         <Card m="2"
             style={{
-                backgroundColor: "#908eac"
+                backgroundColor: "rgb(167, 225, 248)"
                 }} >
             <Link 
                 to={`/projects/${project.id}`}
@@ -16,6 +16,12 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                     textDecoration: "none",
                     color: "inherit"
                 }} >
+            <Inset clip="padding-box" side="top">
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </Inset>
             <Heading size="5" weight="bold" >{project.title}</Heading>
             <Box>
                 <Text weight="medium">Creator: </Text>{project.user?.name}
@@ -30,6 +36,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                 <Text weight="medium">Number of Likes: </Text>{project.userProjectLikes?.length}
             </Box>
             </Link>
+          
             {currentUser?.id === project.user?.id && showEdit && showDelete ? (
                 <Box>
                     <Button m="1" onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</Button>

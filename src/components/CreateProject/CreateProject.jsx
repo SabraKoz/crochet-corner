@@ -40,6 +40,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
 
     return (
         <Container>
+            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
             <Heading m="5" size="7" weight="bold" align="center">Create New Project</Heading>
             <Box m="3" maxWidth="300px">
                 <Text>Title: </Text>
@@ -119,6 +120,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
                     size="3" />
             </Box>
             <Button m="5" type="submit" onClick={handleSubmit}>Submit Project</Button>
+            </Box>
         </Container>
     )
 }

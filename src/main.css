@@ -3,18 +3,9 @@ html, body, #root, .radix-Theme-root {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url('../pink\ crochet.jpg') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-color: transparent !important;
-    z-index: -1;
-}
-
-body #root .radix-Theme-root {
-    background-image: url('../pink\ crochet.jpg') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-color: transparent !important;
+    background-image: url('../blue-crochet.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    color: darkcyan;
 }

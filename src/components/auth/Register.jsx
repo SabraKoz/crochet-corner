@@ -50,6 +50,7 @@ export const Register = (props) => {
 
   return (
     <Container>
+      <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
       <form onSubmit={handleRegister}>
         <Heading size="8" align="center" m="7">Crochet Corner</Heading>
         <Heading size="5" align="center" m="3">Please Register</Heading>
@@ -76,6 +77,7 @@ export const Register = (props) => {
             <Button type="submit">Register</Button>
         </Box>
       </form>
+      </Box>
     </Container>
   )
 }

@@ -4,8 +4,8 @@ import { getProjectById } from "../../services/projectService"
 import { likeProject, unlikeProject } from "../../services/userService"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
-import { faHeart as faRegularHeart } from "@fortawesome/free-regular-svg-icons"
-import { Box, Button, Card, Container, Heading, Text } from "@radix-ui/themes"
+import { faHeartCrack as faRegularHeart } from "@fortawesome/free-solid-svg-icons"
+import { Box, Button, Card, Container, Heading, Strong, Text } from "@radix-ui/themes"
 
 export const ProjectDetails = ({ currentUser }) => {
     const [project, setProject] = useState([])
@@ -54,12 +54,13 @@ export const ProjectDetails = ({ currentUser }) => {
     }
 
     return (
-        <Container m="5">
-            <Heading size="7" weight="bold" align="center">{project.title}</Heading>
+        <Container>
+            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px"}}>
+            <Heading m="5" size="7" weight="bold" align="center">{project.title}</Heading>
             <Box style={{display: "flex", justifyContent: "center", margin: "10px"}}>
                 <Box m="2">
                     <Text weight="medium" style={{padding: "5px"}}>Creator: </Text>
-                    <Link to={`/profile/${project.user?.id}`} style={{textDecoration: "none", color: "inherit"}} >{project.user?.name}</Link>
+                    <Link to={`/profile/${project.user?.id}`} style={{textDecoration: "none", color: "rgb(8, 130, 178)"}} ><Strong>{project.user?.name}</Strong></Link>
                 </Box>
                 <Box m="2">
                     <Text weight="medium" style={{padding: "5px"}}>Likes: </Text>
@@ -85,6 +86,7 @@ export const ProjectDetails = ({ currentUser }) => {
                 <Text weight="medium" >Instructions: </Text>
                     <Card m="2" >{project.body}</Card>
             </Box> 
+            </Box>
         </Container>
     )
 }

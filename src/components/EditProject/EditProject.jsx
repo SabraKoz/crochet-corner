@@ -48,6 +48,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
 
     return (
         <Container>
+            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
             <Heading m="5" size="7" weight="bold" align="center">Edit Project</Heading>
             <Box m="3" maxWidth="300px">
                 <Text>Title: </Text>
@@ -128,7 +129,8 @@ export const EditProject = ({ allTypes, allLevels }) => {
                     required
                     size="3" />
             </Box>
-            <Button m="5" type="submit" onClick={handleSaveProject}>Save</Button>
+            <Button m="5" type="submit" onClick={handleSaveProject}>Save Changes</Button>
+            </Box>
         </Container>
     )
 }
