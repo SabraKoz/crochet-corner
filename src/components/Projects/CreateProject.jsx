@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { createNewProject } from "../../services/projectService"
 import { useNavigate } from "react-router-dom"
-import { Box, Button, Container, Heading, Select, Text, TextArea, TextField } from "@radix-ui/themes"
+import { AlertDialog, Box, Button, Container, Heading, Select, Text, TextArea, TextField } from "@radix-ui/themes"
 
 export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, allLevels }) => {
     const [newType, setNewType] = useState("")
@@ -11,6 +11,7 @@ export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, all
     const [newSkeins, setNewSkeins] = useState(0)
     const [newWeight, setNewWeight] = useState(0)
     const [newHook, setNewHook] = useState("")
+    const [isAlertDialogOpen, setIsAlertDialogOpen] = useState(false)
 
     const navigate = useNavigate()
 
@@ -35,7 +36,7 @@ export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, all
                 navigate(`/profile/${currentUser.id}`)
             })
         } else {
-            window.alert("Please complete all fields")
+            setIsAlertDialogOpen(true)
         }
     }
 
@@ -122,6 +123,18 @@ export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, all
             </Box>
             <Button m="5" type="submit" onClick={handleSubmit}>Submit Project</Button>
             </Box>
+
+            <AlertDialog.Root open={isAlertDialogOpen} onOpenChange={setIsAlertDialogOpen} >
+                <AlertDialog.Content maxWidth="300px" style={{textAlign: "center", backgroundColor: "rgb(222, 242, 250)"}}>
+                    <AlertDialog.Title m="3">Missing Information</AlertDialog.Title>
+                    <AlertDialog.Description>Please complete all fields</AlertDialog.Description>
+                    <Box style={{ display: "flex", justifyContent: "center" }}>
+                        <AlertDialog.Cancel asChild>
+                            <Button m="3" onClick={() => setIsAlertDialogOpen(false)}>Continue</Button>
+                        </AlertDialog.Cancel>
+                    </Box>
+                </AlertDialog.Content>
+            </AlertDialog.Root>
         </Container>
     )
 }

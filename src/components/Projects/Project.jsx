@@ -1,4 +1,4 @@
-import { Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
+import { AlertDialog, Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
 import blanket from "../../images/v-stitch-blanket.jpg"
 
@@ -40,12 +40,28 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
           
             {currentUser?.id === project.user?.id && showEdit && showDelete ? (
                 <Box>
-                    <Button m="1" onClick={() => navigate(`/projects/${project.id}/edit`)} className="btn">Edit</Button>
-                    <Button m="1" onClick={() => onDelete(project.id)} className="btn">Delete</Button>
+                    <Button m="1" onClick={() => navigate(`/projects/${project.id}/edit`)}>Edit</Button>
+                    <AlertDialog.Root>
+                    <AlertDialog.Trigger asChild >
+                        <Button m="1">Delete</Button>
+                    </AlertDialog.Trigger>
+                    <AlertDialog.Content style={{textAlign: "center", backgroundColor: "rgb(222, 242, 250)"}} >
+                        <AlertDialog.Title m="3">Delete Project</AlertDialog.Title>
+                        <AlertDialog.Description m="3">Are you sure you want to permanently delete "{project.title}"</AlertDialog.Description>
+                        <Box>
+                            <AlertDialog.Cancel asChild>
+                                <Button m="3">Cancel</Button>
+                            </AlertDialog.Cancel>
+                            <AlertDialog.Action>
+                                <Button m="3" onClick={() => onDelete(project.id)}>Delete</Button>
+                            </AlertDialog.Action>
+                        </Box>
+                    </AlertDialog.Content>
+                    </AlertDialog.Root>
                 </Box>
             ) : ('')}
             {showComplete ? (
-                <Button m="1" onClick={onToggleComplete} className="btn"> {isComplete ? "Project Goals" : "Completed!"} </Button>
+                <Button m="1" onClick={onToggleComplete}> {isComplete ? "Project Goals" : "Completed!"} </Button>
             ) : ('')}
         </Card>
     )
