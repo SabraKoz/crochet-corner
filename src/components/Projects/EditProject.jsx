@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import { getProjectById, updateProject } from "../../services/projectService"
 import { Box, Button, Container, Heading, Select, Text, TextArea, TextField } from "@radix-ui/themes"
 
-export const EditProject = ({ allTypes, allLevels }) => {
+export const EditProject = ({ getAndSetAllProjects, allTypes, allLevels }) => {
     const [editProject, setEditProject] = useState([])
 
     const { projectId } = useParams()
@@ -42,6 +42,7 @@ export const EditProject = ({ allTypes, allLevels }) => {
         }
 
         updateProject(editedProject).then(() => {
+            getAndSetAllProjects()
             navigate(`/projects/${projectId}`)
         })
     }

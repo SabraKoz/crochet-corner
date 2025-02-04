@@ -5,7 +5,7 @@ import { deleteProject, getUserProjects } from "../../services/projectService"
 import { Project } from "../Projects/Project"
 import { Box, Container, Grid, Heading } from "@radix-ui/themes"
 
-export const Profile = ({ currentUser }) => {
+export const Profile = ({ getAndSetAllProjects, currentUser }) => {
     const [user, setUser] = useState([])
     const [userProjects, setUserProjects] = useState([])
 
@@ -31,6 +31,7 @@ export const Profile = ({ currentUser }) => {
     const handleDeleteProject = (projectId) => {
         deleteProject(projectId).then(() => {
             getAndSetUserProjects()
+            getAndSetAllProjects()
         })
     }
 

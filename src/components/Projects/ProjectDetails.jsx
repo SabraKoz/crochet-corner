@@ -7,7 +7,7 @@ import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
 import { faHeartCrack as faRegularHeart } from "@fortawesome/free-solid-svg-icons"
 import { Box, Button, Card, Container, Heading, Strong, Text } from "@radix-ui/themes"
 
-export const ProjectDetails = ({ currentUser }) => {
+export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
     const [project, setProject] = useState([])
     const [hasLiked, setHasLiked] = useState(false)
     const [userLikeId, setUserLikeId] = useState(null)
@@ -43,6 +43,7 @@ export const ProjectDetails = ({ currentUser }) => {
 
         likeProject(newUserProjectLikeObj).then(() => {
             getAndSetProject()
+            getAndSetAllProjects()
             navigate("/favorites")
         })
     }
@@ -50,6 +51,7 @@ export const ProjectDetails = ({ currentUser }) => {
     const handleUnlike = () => {
         unlikeProject(userLikeId).then(() => {
             getAndSetProject()
+            getAndSetAllProjects()
         })
     }
 

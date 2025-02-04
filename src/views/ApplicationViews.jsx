@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 import { Outlet, Routes, Route} from "react-router-dom"
 import { NavBar } from "../components/nav/NavBar"
 import { AllProjects } from "../components/Projects/AllProjects"
-import { ProjectDetails } from "../components/ProjectDetails/ProjectDetails"
-import { EditProject } from "../components/EditProject/EditProject"
-import { CreateProject } from "../components/CreateProject/CreateProject"
+import { ProjectDetails } from "../components/Projects/ProjectDetails"
+import { EditProject } from "../components/Projects/EditProject"
+import { CreateProject } from "../components/Projects/CreateProject"
 import { Profile } from "../components/users/Profile"
 import { Favorites } from "../components/users/Favorites"
 import { getAllLevels, getAllProjects, getAllTypes } from "../services/projectService"
@@ -46,14 +46,14 @@ export const ApplicationViews = () => {
                 <Route index element={<AllProjects currentUser={currentUser} allProjects={allProjects} allTypes={allTypes} allLevels={allLevels} />} />
                 <Route path="projects" >
                     <Route index element={<AllProjects currentUser={currentUser} allProjects={allProjects} allTypes={allTypes} allLevels={allLevels} />} />
-                    <Route path=":projectId" element={<ProjectDetails currentUser={currentUser} />} />
-                    <Route path=":projectId/edit" element={<EditProject allTypes={allTypes} allLevels={allLevels} />} />
+                    <Route path=":projectId" element={<ProjectDetails getAndSetAllProjects={getAndSetAllProjects} currentUser={currentUser} />} />
+                    <Route path=":projectId/edit" element={<EditProject getAndSetAllProjects={getAndSetAllProjects} allTypes={allTypes} allLevels={allLevels} />} />
                 </Route>
-                <Route path="createProject" element={<CreateProject currentUser={currentUser} allTypes={allTypes} allLevels={allLevels} />} />
+                <Route path="createProject" element={<CreateProject getAndSetAllProjects={getAndSetAllProjects} currentUser={currentUser} allTypes={allTypes} allLevels={allLevels} />} />
                 <Route path="favorites" element={<Favorites currentUser={currentUser} />} />
                 <Route path="profile">
-                    <Route index element={<Profile currentUser={currentUser} />} />
-                    <Route path=":userId" element={<Profile currentUser={currentUser} />} />
+                    <Route index element={<Profile getAndSetAllProjects={getAndSetAllProjects} currentUser={currentUser} />} />
+                    <Route path=":userId" element={<Profile getAndSetAllProjects={getAndSetAllProjects} currentUser={currentUser} />} />
                 </Route>
             </Route>
         </Routes>

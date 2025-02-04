@@ -3,7 +3,7 @@ import { createNewProject } from "../../services/projectService"
 import { useNavigate } from "react-router-dom"
 import { Box, Button, Container, Heading, Select, Text, TextArea, TextField } from "@radix-ui/themes"
 
-export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
+export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, allLevels }) => {
     const [newType, setNewType] = useState("")
     const [newLevel, setNewLevel] = useState("")
     const [newTitle, setNewTitle] = useState("")
@@ -31,6 +31,7 @@ export const CreateProject = ({ currentUser, allTypes, allLevels }) => {
 
         if (newTitle && newBody && newSkeins && newWeight && newHook && newType && newLevel) {
             createNewProject(newProject).then(() => {
+                getAndSetAllProjects()
                 navigate(`/profile/${currentUser.id}`)
             })
         } else {
