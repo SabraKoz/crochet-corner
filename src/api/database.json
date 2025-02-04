@@ -1,0 +1,303 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Frodo",
+      "email": "frodo@shiremail.com"
+    },
+    {
+      "id": 2,
+      "name": "Aragorn",
+      "email": "aragorn@rangers.com"
+    },
+    {
+      "id": 3,
+      "name": "Gandalf",
+      "email": "gandalf@wizards.com"
+    },
+    {
+      "id": 4,
+      "name": "Legolas",
+      "email": "legolas@elvesmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Samwise",
+      "email": "samwise@shiremail.com"
+    },
+    {
+      "id": 6,
+      "name": "Arwen",
+      "email": "arwen@rivendell.com"
+    },
+    {
+      "id": 7,
+      "name": "Eowyn",
+      "email": "eowyn@rohanmail.com"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Hat"
+    },
+    {
+      "id": 2,
+      "name": "Scarf"
+    },
+    {
+      "id": 3,
+      "name": "Blanket"
+    },
+    {
+      "id": 4,
+      "name": "Pet Bed"
+    }
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "name": "Beginner"
+    },
+    {
+      "id": 2,
+      "name": "Intermediate"
+    },
+    {
+      "id": 3,
+      "name": "Advanced"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Velvet Infinity Scarf",
+      "body": "For this scarf I used 1 skein of Bernat Crushed Velvet yarn in Deep Gray color. \nStart by chaining 26. \nHalf double crochet in second stitch from hook, then half double crochet in each stitch to the end of the chain (25 stitches per row). \nChain 1 and turn. \nContinue 25 half double crochet per row until end of skein, leave just enough yarn to attach ends together. \nSingle stitch (or sew) both ends of scarf together to make an infinity scarf.",
+      "skeins": 1,
+      "weight": 5,
+      "hook": "I/9",
+      "image": "",
+      "userId": 4,
+      "typeId": 2,
+      "levelId": 2
+    },
+    {
+      "id": 2,
+      "title": "Waffle Pattern Throw Blanket",
+      "body": "This blanket can be made with one or many colors of yarn. \nI used 2 colors: main color Wine Red, accent color Navy Blue. \n\nChain in multiples of 3, plus 2. \nI started by chaining 164 (for larger blanket) in main color. \nDouble crochet (DC) in 4th stitch from hook, and continue in each stitch (141 stitches total in row). \nAt the end of the row, chain 2 and turn (this turning chain counts as the first DC of the next row). \nFront post DC in next stitch, then DC in next 2 stitches, Front Post DC. \nContinue this pattern to the end, end with DC in top of previous row's turning chain. \nChain 2 and turn. \nDC in next stitch, Front Post DC in next 2 stitches, DC in next stitch, continue across. \nThis pattern will continue for the rest of the blanket, make it as long as you want, changing colors if you want. \n\nFor this blanket I did 8 rows of Wine Red, then 4 rows of Navy Blue, and back to 8 rows of Wine Red. \nYou can add a border if you want too.",
+      "skeins": 10,
+      "weight": 4,
+      "hook": "I/9",
+      "image": "/images/waffle-blanket.jpg",
+      "userId": 1,
+      "typeId": 3,
+      "levelId": 2
+    },
+    {
+      "id": 3,
+      "title": "V Stitch Blanket",
+      "body": "This blanket can be made with one or many colors of yarn. \nI used 3 colors: mushroom beige, dusty teal, pale amethyst. \nChain 124. \n2 Double Crochet (DC) in 4th stitch from hook, skip 1 chain, 2 DC in next chain, repeat to end, 1 DC in last chain, chain 3 and turn. \n2 DC in middle of each DC pair across, 1 DC into chain, chain 3 and turn. \nRepeat until desired length, changing colors if you want.",
+      "skeins": 8,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/v-stitch-blanket.jpg",
+      "userId": 3,
+      "typeId": 3,
+      "levelId": 2
+    },
+    {
+      "id": 4,
+      "title": "Infinity Hood Scarf",
+      "body": "I used Caron One Pound yarn for this scarf. \nChain 225 stitches, slip stitch to first chain to make a big loop. \nChain 1, pull down and turn. \nHalf Double Crochet (HDC) all around (225 stitches total), chain 1, pull down, turn. \nHDC in back/3rd loop around. \nContinue until wide enough to cover your head and neck and/or until the skein is gone.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "J/10",
+      "image": "",
+      "userId": 2,
+      "typeId": 2,
+      "levelId": 3
+    },
+    {
+      "id": 5,
+      "title": "Chunky Blanket",
+      "body": "I used Bernat Blanket Big yarn, and it may be easier to hand knit than using a hook or needles. \nMake a slip knot, 'cast on' 35 stitches (50 inches wide). \nPull up loops in bumps on chain (35 loops). \nSkip first loop, pull up loops across. \nRepeat until desired length, cast off stitches. \nYou can tie skeins together, or sew them together for a smoother look and feel.",
+      "skeins": 10,
+      "weight": 7,
+      "hook": "U/Hands",
+      "image": "",
+      "userId": 5,
+      "typeId": 3,
+      "levelId": 1
+    },
+    {
+      "id": 6,
+      "title": "Wave Blanket",
+      "body": "Chain 156, plus 3.",
+      "skeins": 12,
+      "weight": 1,
+      "hook": "G/7",
+      "image": "/images/wave-blanket.jpg",
+      "userId": 7,
+      "typeId": 3,
+      "levelId": 1
+    },
+    {
+      "id": 7,
+      "title": "hat",
+      "body": "Start with a magic circle.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "G/7",
+      "image": "",
+      "userId": 2,
+      "typeId": 1,
+      "levelId": 1
+    },
+    {
+      "title": "Rainbow Baby Blanket",
+      "body": "I used 4 different colors (Blue, Lavender, Green, Pink), plus a main color (white).\nChain 145 with main color.\nRow 1: Using dominate color Double crochet (DC) in 5th chain from hook. Chain 1, skip next chain, 1 DC in next space. Repeat to end.\nRow 2: Change color, chain 1, turn, 1 Single crochet (SC) in first chain space. Chain 1, 1 SC in next space. Repeat to end.\nRow 3: Change to main color. Chain 4, turn, DC in next chain space. Chain 1, 1 DC in next space. Repeat to end.\n\nRepeat rows 2 and 3 until you reach the desired length.\n\nTo hide all the color changes use a fringe or single crochet border.",
+      "skeins": 6,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/rainbow-blanket.jpg",
+      "userId": 6,
+      "typeId": 3,
+      "levelId": 2,
+      "id": 9
+    },
+    {
+      "id": 10,
+      "title": "scarf",
+      "body": "Start by chaining 35 stitches.",
+      "skeins": 3,
+      "weight": 5,
+      "hook": "I/9",
+      "image": "",
+      "userId": 2,
+      "typeId": 2,
+      "levelId": 3
+    },
+    {
+      "title": "Slouchy Pattern Hat",
+      "body": "I used Caron Simply Soft yarn for this hat.\n\nMagic Circle - wrap yarn loosely around first 2 fingers of left hand (once or twice), insert hook into top of loop, draw up loop from working yarn, remove fingers, pull loop closed only after all stitches are in place for the foundation.\n\nCluster Stitch – Yarn over, insert hook into stitch, pull up a loop, yarn over, pull through 2 loops, yarn over, insert hook into stitch, pull up a loop, yarn over, pull through 2 loops, yarn over, pull through all 3 loops.\n\nRow 1: Chain 2, place 9 Half Double crochet (hdc) stitches into the loop, slip stitch to join (10).\nRow 2: Chain 2, place 2 hdc into each stitch, slip stitch to join (20).\nRow 3: Chain 2, *hdc in the next stitch, 2 hdc into the next stitch* Repeat * around slip stitch to join (30).\nRow 4: Chain 2, *hdc into the next 2 stitches, 2 hdc into the next stitch* Repeat * around slip stitch to join (40).\nRow 5: Chain 3, *skip the first stitch, cluster stitch into the next stitch, cross over by placing a cluster stitch into the previous skipped stitch* Repeat * to the end of the round and join with a slip stitch into the beginning chain. ( 20 Crossed Clusters).\n\nRepeat Row 5 for 9 more rows (10 rows total of the cluster stitches).\n\nRow 15: Chain 1, *Single crochet (SC) into the next stitch, 2 SC into the next stitch* Repeat * to the end and join with a slip stitch. (60).\nRow 16: Chain 1, SC around join with a slip stitch.\n\nRepeat Row 16 for 4 more rows (5 total rows of single crochet stitches).\nTie off and weave in the ends.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/slouchy-hat.jpg",
+      "userId": 6,
+      "typeId": 1,
+      "levelId": 3,
+      "id": 11
+    }
+  ],
+  "userProjectLikes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "projectId": 1,
+      "complete": false
+    },
+    {
+      "id": 2,
+      "userId": 6,
+      "projectId": 2,
+      "complete": false
+    },
+    {
+      "id": 3,
+      "userId": 7,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "projectId": 2,
+      "complete": false
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "projectId": 4,
+      "complete": false
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "projectId": 6,
+      "complete": true
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "projectId": 5,
+      "complete": false
+    },
+    {
+      "userId": 6,
+      "projectId": 4,
+      "complete": false,
+      "id": 13
+    },
+    {
+      "userId": 6,
+      "projectId": 7,
+      "complete": false,
+      "id": 14
+    },
+    {
+      "id": 15,
+      "userId": 6,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "userId": 1,
+      "projectId": 5,
+      "complete": false,
+      "id": 18
+    },
+    {
+      "userId": 3,
+      "projectId": 4,
+      "complete": false,
+      "id": 19
+    },
+    {
+      "userId": 3,
+      "projectId": 1,
+      "complete": false,
+      "id": 20
+    },
+    {
+      "userId": 3,
+      "projectId": 9,
+      "complete": false,
+      "id": 21
+    },
+    {
+      "userId": 2,
+      "projectId": 3,
+      "complete": false,
+      "id": 22
+    },
+    {
+      "userId": 2,
+      "projectId": 2,
+      "complete": false,
+      "id": 23
+    },
+    {
+      "id": 24,
+      "userId": 2,
+      "projectId": 9,
+      "complete": true
+    }
+  ]
+}

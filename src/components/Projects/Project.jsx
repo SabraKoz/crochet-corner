@@ -1,6 +1,6 @@
 import { AlertDialog, Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
-import blanket from "../../images/v-stitch-blanket.jpg"
+// import crochetStar from "../../images/crochet-star.jpg"
 
 export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, showComplete, onToggleComplete, isComplete }) => {
 
@@ -19,7 +19,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                 }} >
             <Inset clip="padding-box" side="top">
                 <img
-                    src={blanket}
+                    src={project.image}
                     alt={project.title}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </Inset>

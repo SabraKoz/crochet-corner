@@ -8,7 +8,7 @@ export const NavBar = ({ currentUser }) => {
 
     return (
         <>
-            <TabNav.Root justify="center" style={{backgroundColor: "rgb(196, 232, 246)"}}>
+            <TabNav.Root justify="center" style={{ backgroundColor: "rgb(196, 232, 246)" }}>
                 <TabNav.Link asChild active={pathname === "/projects"}>
                     <Link to="/projects">All Projects</Link>
                 </TabNav.Link>
