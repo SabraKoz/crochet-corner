@@ -5,8 +5,7 @@ import { likeProject, unlikeProject } from "../../services/userService"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
 import { faHeartCrack as faRegularHeart } from "@fortawesome/free-solid-svg-icons"
-import { Box, Button, Card, Container, Grid, Heading, Strong, Text } from "@radix-ui/themes"
-// import crochetStar from "../../images/crochet-star.jpg"
+import { Box, Button, Card, Container, Grid, Heading, HoverCard, Strong, Text } from "@radix-ui/themes"
 
 export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
     const [project, setProject] = useState([])
@@ -59,11 +58,18 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
     return (
         <Container>
             <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
-                <Heading m="5" size="7" weight="bold" align="center">{project.title}</Heading>
+                <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>{project.title}</Heading>
                 <Box style={{ display: "flex", justifyContent: "center", margin: "10px" }}>
                     <Box m="2">
                         <Text weight="medium" style={{ padding: "5px" }}>Creator: </Text>
+                        <HoverCard.Root>
+                        <HoverCard.Trigger>
                         <Link to={`/profile/${project.user?.id}`} style={{ textDecoration: "none", color: "rgb(8, 130, 178)" }} ><Strong>{project.user?.name}</Strong></Link>
+                        </HoverCard.Trigger>
+                        <HoverCard.Content>
+                            <Text>View all projects by {project.user?.name}</Text>
+                        </HoverCard.Content>
+                        </HoverCard.Root>
                     </Box>
                     <Box m="2">
                         <Text weight="medium" style={{ padding: "5px" }}>Likes: </Text>

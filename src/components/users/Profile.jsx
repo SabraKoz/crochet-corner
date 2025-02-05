@@ -38,7 +38,7 @@ export const Profile = ({ getAndSetAllProjects, currentUser }) => {
     return (
         <Container>
             <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px"}}>
-            <Heading m="5" size="7" weight="bold" align="center" >Projects Created by {user.name}</Heading  >
+            <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>Projects Created by {user.name}</Heading  >
             <Grid m="5" columns="3" gap="3">
                 {userProjects.map(project => (
                     <Project 

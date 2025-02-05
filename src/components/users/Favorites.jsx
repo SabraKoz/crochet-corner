@@ -47,7 +47,7 @@ export const Favorites = ({ currentUser }) => {
     return (
         <Container>
             <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px"}}>
-            <Heading m="5" size="7" weight="bold" align="center">{user?.name}'s Favorite Projects</Heading>
+            <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>{user?.name}'s Favorite Projects</Heading>
             <Grid m="5" columns="2" gap="5">
                 <Box >
                     <Heading size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>

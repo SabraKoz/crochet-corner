@@ -1,4 +1,4 @@
-import { AlertDialog, Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
+import { AlertDialog, AspectRatio, Box, Button, Card, Heading, Inset, Text } from "@radix-ui/themes"
 import { Link, useNavigate } from "react-router-dom"
 // import crochetStar from "../../images/crochet-star.jpg"
 
@@ -21,7 +21,7 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                 <img
                     src={project.image}
                     alt={project.title}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    style={{ width: "100%", height: "300px", objectFit: "cover", objectPosition: "center" }} />
             </Inset>
             <Heading size="5" weight="bold" >{project.title}</Heading>
             <Box>
