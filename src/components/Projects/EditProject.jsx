@@ -35,7 +35,7 @@ export const EditProject = ({ getAndSetAllProjects, allTypes, allLevels }) => {
             skeins: parseInt(editProject.skeins),
             weight: parseInt(editProject.weight),
             hook: editProject.hook,
-            image: "",
+            image: editProject.image,
             userId: editProject.userId,
             typeId: parseInt(editProject.typeId),
             levelId: parseInt(editProject.levelId)
