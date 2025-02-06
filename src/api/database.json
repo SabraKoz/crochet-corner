@@ -228,18 +228,6 @@
       "complete": false
     },
     {
-      "id": 10,
-      "userId": 2,
-      "projectId": 6,
-      "complete": true
-    },
-    {
-      "id": 11,
-      "userId": 2,
-      "projectId": 5,
-      "complete": false
-    },
-    {
       "userId": 6,
       "projectId": 4,
       "complete": false,
@@ -312,22 +300,16 @@
       "id": 27
     },
     {
-      "id": 28,
-      "userId": 2,
-      "projectId": 13,
-      "complete": false
-    },
-    {
-      "userId": 2,
-      "projectId": 12,
-      "complete": false,
-      "id": 29
-    },
-    {
       "userId": 1,
       "projectId": 11,
       "complete": false,
       "id": 30
+    },
+    {
+      "userId": 2,
+      "projectId": 11,
+      "complete": false,
+      "id": 31
     }
   ]
 }
