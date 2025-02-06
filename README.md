@@ -37,14 +37,18 @@ git clone git@github.com:SabraKoz/crochet-corner.git
 cd crochet-corner
 ```
 2. Install packages:
-* ```npm install```
-* ```npm install json-server```
-* ```npm install @radix-ui/themes```
-4. Start JSON server database:
-* ```cd src```
-* ```cd api```
-* ```json-server -p 8088 database.json```
-5. Launch application:
+```sh
+npm install
+npm install json-server
+npm install @radix-ui/themes
+```
+3. Start JSON server database:
+```sh
+cd src
+cd api
+json-server -p 8088 database.json
+```
+4. Launch application:
 * In a new terminal: ```cd crochet-corner``` then: ```npm run dev```
 * Copy an email address from the users table in the database, or register a new user account to begin browsing and sharing yarn projects!
 
