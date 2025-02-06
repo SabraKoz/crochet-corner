@@ -4,17 +4,22 @@ A social platform for crochet enthusiasts to share projects they created, track 
 
 ## Purpose
 
-Crochet Corner provides a dedicated space for yarn crafters of all skill levels to document and share their work and to engage and find inspiration with a crafting community, addressing the need for project organization and social connection. 
+Crochet Corner provides a dedicated space for yarn crafters of all skill levels to document and share their work and to engage and find inspiration within a crafting community, addressing the need for project organization and social connection. 
 
 ## Features
 
-
+* Allows users to create, edit, and delete their own crochet projects
+* Allows users to like and save their favorite projects, and track their own completion status of favorite projects
+* Filter projects by the type of craft (hat, scarf, blanket, pet bed)
+* Filter projects by the difficulty level of the craft (beginner, intermediate, advanced)
+* View their own profile listing all their own projects, and other users' profiles displaying their projects
+* View details of any project that include hook size, yarn weight, skeins, and instructions
 
 ## ERD
 <img src="./images/Crochet Corner ERD.png">
 
 ## Wireframe 
-<img src="">
+<img src="./images/crochet-corner-wireframe.png">
 
 ## Setup
 1. Clone this repository
