@@ -21,8 +21,8 @@ Crochet Corner provides a dedicated space for yarn crafters of all skill levels 
 2. ```cd``` into the directory
 3. Install packages:
 * ```npm install```
-* ```npm install json-server
-* ```npm install @radix-ui/themes
+* ```npm install json-server```
+* ```npm install @radix-ui/themes```
 4. Start JSON server:
 * ```cd src```
 * ```cd api```
@@ -36,4 +36,5 @@ Crochet Corner provides a dedicated space for yarn crafters of all skill levels 
 Sabra Kozlina 
 
 [GitHub](https://github.com/SabraKoz)
+
 [LinkedIn](https://www.linkedin.com/in/sabra-kozlina-baa0911b7)
