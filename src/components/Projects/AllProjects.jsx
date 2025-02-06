@@ -24,7 +24,7 @@ export const AllProjects = ({ currentUser, allProjects, allTypes, allLevels }) =
 
     return (
         <Container>
-            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px"}}>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px"}}>
             <Heading m="5" align="center" size="8" weight="bold" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}} >Crochet Corner</Heading>
             <ProjectFilter allTypes={allTypes} allLevels={allLevels} setSelectType={setSelectType} setSelectLevel={setSelectLevel} />
                 <Grid columns="3" gap="3">

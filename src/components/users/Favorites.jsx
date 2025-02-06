@@ -46,12 +46,13 @@ export const Favorites = ({ currentUser }) => {
 
     return (
         <Container>
-            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px"}}>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px"}}>
             <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>{user?.name}'s Favorite Projects</Heading>
-            <Grid m="5" columns="2" gap="5">
-                <Box >
-                    <Heading size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>
+            <Grid m="5" columns="2" gap="7">
+                <Box m="2">
+                    <Heading mb="5" size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>
                     {goalProjects.map(like => (
+                        <Box mb="6">
                         <Project 
                             key={like.id}
                             project={like.project}
@@ -59,12 +60,14 @@ export const Favorites = ({ currentUser }) => {
                             showComplete={true}
                             isComplete={false}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
+                        </Box>
                     ))}
                 </Box>
     
-                <Box >
-                    <Heading size="6" weight="bold" align="center">{completeProjects.length} Projects Completed</Heading>
+                <Box m="2">
+                    <Heading mb="5" size="6" weight="bold" align="center">{completeProjects.length} Projects Completed</Heading>
                     {completeProjects.map(like => (
+                        <Box mb="6">
                         <Project 
                             key={like.id}
                             project={like.project}
@@ -72,6 +75,7 @@ export const Favorites = ({ currentUser }) => {
                             showComplete={true}
                             isComplete={true}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
+                        </Box>
                     ))}
                 </Box>
             </Grid>

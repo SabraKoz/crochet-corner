@@ -30,7 +30,7 @@ export const Login = () => {
 
   return (
     <Container>
-      <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
+      <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px" }}>
       <form onSubmit={handleLogin}>
         <Heading size="8" align="center" m="7" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>Welcome to Crochet Corner</Heading>
         <Heading size="5" align="center" m="3">Please sign in to begin crafting!</Heading>

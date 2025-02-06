@@ -32,7 +32,7 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
 
     useEffect(() => {
         getAndSetProject()
-    }, [])
+    }, [currentUser])
 
     const handleLike = () => {
         const newUserProjectLikeObj = {
@@ -57,7 +57,7 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
 
     return (
         <Container>
-            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px" }}>
                 <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>{project.title}</Heading>
                 <Box style={{ display: "flex", justifyContent: "center", margin: "10px" }}>
                     <Box m="2">

@@ -137,7 +137,7 @@
       "weight": 4,
       "hook": "G/7",
       "image": "/images/wave-blanket.jpg",
-      "userId": 7,
+      "userId": 5,
       "typeId": 3,
       "levelId": 1
     },
@@ -184,10 +184,22 @@
       "weight": 4,
       "hook": "I/9",
       "image": "/images/basket-weave-blanket.jpg",
-      "userId": 7,
+      "userId": 6,
       "typeId": 3,
       "levelId": 3,
       "id": 13
+    },
+    {
+      "title": "hat",
+      "body": "Start by making a magic circle",
+      "skeins": 2,
+      "weight": 4,
+      "hook": "I/9",
+      "image": "/images/crochet.jpg",
+      "userId": 2,
+      "typeId": 1,
+      "levelId": 1,
+      "id": 14
     }
   ],
   "userProjectLikes": [
@@ -270,16 +282,16 @@
       "complete": true
     },
     {
+      "id": 23,
       "userId": 2,
       "projectId": 2,
-      "complete": false,
-      "id": 23
+      "complete": true
     },
     {
       "id": 24,
       "userId": 2,
       "projectId": 9,
-      "complete": true
+      "complete": false
     },
     {
       "id": 25,
@@ -310,6 +322,12 @@
       "projectId": 11,
       "complete": false,
       "id": 31
+    },
+    {
+      "userId": 2,
+      "projectId": 13,
+      "complete": false,
+      "id": 32
     }
   ]
 }

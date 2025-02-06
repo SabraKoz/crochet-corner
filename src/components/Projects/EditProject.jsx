@@ -49,7 +49,7 @@ export const EditProject = ({ getAndSetAllProjects, allTypes, allLevels }) => {
 
     return (
         <Container>
-            <Box m="5" style={{ borderRadius: "20px", background: "rgb(196, 232, 246)", padding: "20px" }}>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px" }}>
             <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>Edit Project</Heading>
             <Box m="3" maxWidth="300px">
                 <Text>Title: </Text>

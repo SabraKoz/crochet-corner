@@ -9,7 +9,16 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
     return (
         <Card m="2"
             style={{
-                backgroundColor: "rgb(167, 225, 248)"
+                backgroundColor: "rgb(167, 225, 248)",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                }}
+                onMouseEnter={(event) => {
+                    event.currentTarget.style.transform = "scale(1.01)";
+                    event.currentTarget.style.boxShadow = "0px 0px 20px rgb(8, 130, 178)"
+                    }}
+                onMouseLeave={(event) => {
+                    event.currentTarget.style.transform = "scale(1)";
+                    event.currentTarget.style.boxShadow = "none"
                 }} >
             <Link 
                 to={`/projects/${project.id}`}
