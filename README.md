@@ -49,7 +49,11 @@ cd api
 json-server -p 8088 database.json
 ```
 4. Launch application:
-* In a new terminal: ```cd crochet-corner``` then: ```npm run dev```
+* In a new terminal: 
+```sh
+cd crochet-corner
+npm run dev
+```
 * Copy an email address from the users table in the database, or register a new user account to begin browsing and sharing yarn projects!
 
 ## Creator
