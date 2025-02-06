@@ -15,6 +15,15 @@ Crochet Corner provides a dedicated space for yarn crafters of all skill levels 
 * View their own profile listing all their own projects, and other users' profiles displaying their projects
 * View details of any project that include hook size, yarn weight, skeins, and instructions
 
+## Technologies Used
+
+* React
+* JavaScript
+* Radix
+* JSON server
+* HTML
+* CSS
+
 ## ERD
 <img src="./images/Crochet Corner ERD.png">
 
@@ -22,19 +31,22 @@ Crochet Corner provides a dedicated space for yarn crafters of all skill levels 
 <img src="./images/crochet-corner-wireframe.png">
 
 ## Setup
-1. Clone this repository
-2. ```cd``` into the directory
-3. Install packages:
+1. Clone the repository
+```sh
+git clone git@github.com:SabraKoz/crochet-corner.git
+cd crochet-corner
+```
+2. Install packages:
 * ```npm install```
 * ```npm install json-server```
 * ```npm install @radix-ui/themes```
-4. Start JSON server:
+4. Start JSON server database:
 * ```cd src```
 * ```cd api```
 * ```json-server -p 8088 database.json```
 5. Launch application:
-* In a new terminal ```cd``` to main directory, then ```npm run dev```
-* Register a new user account to begin browsing and sharing yarn projects!
+* In a new terminal: ```cd crochet-corner``` then: ```npm run dev```
+* Copy an email address from the users table in the database, or register a new user account to begin browsing and sharing yarn projects!
 
 ## Creator
 
