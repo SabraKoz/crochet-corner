@@ -55,7 +55,7 @@ export const ProjectComments = ({ projectId, currentUser }) => {
     }
 
     return (
-        <Box m="5">
+        <Box m="9" style={{ padding: "20px", border: "3px solid rgb(222, 242, 250)", borderRadius: "10px" }}>
             <Text weight="medium">Comments:</Text>
             <form onSubmit={handleSubmit}>
                 <TextArea
@@ -78,10 +78,10 @@ export const ProjectComments = ({ projectId, currentUser }) => {
                                 <Dialog.Trigger>
                                     <Button m="2" onClick={() => setEditedComment(comment)}>Edit</Button>
                                 </Dialog.Trigger>
-                                <Dialog.Content maxWidth="450px">
-                                    <Dialog.Title>Edit Comment</Dialog.Title>
-                                    <Dialog.Description>New comment:</Dialog.Description>
-                                    <TextField.Root value={editedComment.body ? editedComment.body : ''} onChange={handleChangeEditComment} />
+                                <Dialog.Content maxWidth="500px" style={{ backgroundColor: "rgb(222, 242, 250)" }}>
+                                    <Dialog.Title m="2" style={{ textAlign: "center" }}>Edit Comment</Dialog.Title>
+                                    <Dialog.Description m="2">New comment:</Dialog.Description>
+                                    <TextField.Root m="2" value={editedComment.body ? editedComment.body : ''} onChange={handleChangeEditComment} />
                                     <Dialog.Close>
                                         <Button m="2">Cancel</Button>
                                     </Dialog.Close>
