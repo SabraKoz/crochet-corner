@@ -1,25 +1,41 @@
+import { Box, Select, Text } from "@radix-ui/themes"
+
 export const ProjectFilter = ({ allTypes, allLevels, setSelectType, setSelectLevel }) => {
     return (
-        <section className="project-filter">
-            <div>
-                <label className="info-title">Search Project Type: </label>
-                <select className="select-dropdown" onChange={(event) => setSelectType(event.target.value)}>
-                    <option value="">Select Type</option>
-                    {allTypes.map(type => {
-                        return (<option value={type.id} key={type.id}>{type.name}</option>)
-                    })}
-                </select>
-            </div>
+        <Box style={{ display: "flex", justifyContent: "space-evenly", padding: "20px" }}>
+            <Box>
+                <Text size="3" m="1">Search Project Type: </Text>
+                <Select.Root
+                    defaultValue="all"
+                    onValueChange={(value) => setSelectType(value === "all" ? null : value)}>
+                    <Select.Trigger />
+                    <Select.Content>
+                        <Select.Group>
+                            <Select.Item value="all">Select Type</Select.Item>
+                            {allTypes.map(type => {
+                                return (<Select.Item value={type.id} key={type.id}>{type.name}</Select.Item>)
+                            })}
+                        </Select.Group>
+                    </Select.Content>
+                </Select.Root>
+            </Box>
 
-            <div>
-                <label className="info-title">Search Project Difficulty: </label>
-                <select className="select-dropdown" onChange={(event) => setSelectLevel(event.target.value)}>
-                    <option value="">Select Level</option>
-                    {allLevels.map(level => {
-                        return (<option value={level.id} key={level.id}>{level.name}</option>)
-                    })}
-                </select>
-            </div>
-        </section>
+            <Box>
+                <Text size="3" m="1">Search Project Difficulty: </Text>
+                <Select.Root
+                    defaultValue="all"
+                    onValueChange={(value) => setSelectLevel(value === "all" ? null : value)}>
+                    <Select.Trigger />
+                    <Select.Content>
+                        <Select.Group>
+                            <Select.Item value="all">Select Level</Select.Item>
+                            {allLevels.map(level => {
+                                return (<Select.Item value={level.id} key={level.id}>{level.name}</Select.Item>)
+                            })}
+                        </Select.Group>
+                    </Select.Content>
+                </Select.Root>
+            </Box>
+        </Box>
     )
 }

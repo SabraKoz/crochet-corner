@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-// import "./Login.css"
 import { getUserByEmail } from "../../services/userService"
+import { Box, Button, Container, Heading, TextField } from "@radix-ui/themes"
 
 export const Login = () => {
   const [email, set] = useState("")
@@ -29,34 +29,29 @@ export const Login = () => {
   }
 
   return (
-    <main className="auth-container">
-      <section>
-        <form className="auth-form" onSubmit={handleLogin}>
-          <h1 className="header">Crochet Corner</h1>
-          <h2>Please sign in</h2>
-          <fieldset className="auth-fieldset">
-            <div>
-              <input
-                type="email"
-                value={email}
-                className="auth-form-input"
-                onChange={(evt) => set(evt.target.value)}
-                placeholder="Email address"
-                required
-                autoFocus
-              />
-            </div>
-          </fieldset>
-          <fieldset className="auth-fieldset">
-            <div>
-              <button type="submit">Sign in</button>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-      <section className="register-link">
+    <Container>
+      <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px" }}>
+      <form onSubmit={handleLogin}>
+        <Heading size="8" align="center" m="7" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>Welcome to Crochet Corner</Heading>
+        <Heading size="5" align="center" m="3">Please sign in to begin crafting!</Heading>
+        <Box m="3" style={{ display: "flex", justifyContent: "center" }} >
+            <TextField.Root
+              type="email"
+              value={email}
+              onChange={(evt) => set(evt.target.value)}
+              placeholder="Email address"
+              required
+              autoFocus
+            />
+        </Box>
+        <Box m="3" style={{ display: "flex", justifyContent: "center" }}>
+            <Button type="submit">Sign in</Button>
+        </Box>
+      </form>
+      <Box m="3" style={{ display: "flex", justifyContent: "center" }} >
         <Link to="/register">Not a member yet?</Link>
-      </section>
-    </main>
+      </Box>
+      </Box>
+    </Container>
   )
 }

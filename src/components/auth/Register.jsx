@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
 import { createUser, getUserByEmail } from "../../services/userService"
+import { Box, Button, Container, Heading, TextField } from "@radix-ui/themes"
 
 export const Register = (props) => {
   const [user, setUser] = useState({
@@ -49,41 +49,35 @@ export const Register = (props) => {
   }
 
   return (
-    <main className="auth-container">
-      <form className="auth-form" onSubmit={handleRegister}>
-        <h1 className="header">Crochet Corner</h1>
-        <h2>Please Register</h2>
-        <fieldset className="auth-fieldset">
-          <div>
-            <input
+    <Container>
+      <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px" }}>
+      <form onSubmit={handleRegister}>
+        <Heading size="8" align="center" m="7" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>Welcome to Crochet Corner</Heading>
+        <Heading size="5" align="center" m="3">Please Register</Heading>
+        <Box m="3" style={{ display: "flex", justifyContent: "center" }}>
+            <TextField.Root
               onChange={updateUser}
               type="text"
-              id="fullName"
-              className="auth-form-input"
+              id="name"
               placeholder="Enter your name"
               required
               autoFocus
             />
-          </div>
-        </fieldset>
-        <fieldset className="auth-fieldset">
-          <div>
-            <input
+        </Box>
+        <Box m="3" style={{ display: "flex", justifyContent: "center" }}>
+            <TextField.Root
               onChange={updateUser}
               type="email"
               id="email"
-              className="auth-form-input"
               placeholder="Email address"
               required
             />
-          </div>
-        </fieldset>
-        <fieldset className="auth-fieldset">
-          <div>
-            <button type="submit">Register</button>
-          </div>
-        </fieldset>
+        </Box>
+        <Box m="3" style={{ display: "flex", justifyContent: "center" }}>
+            <Button type="submit">Register</Button>
+        </Box>
       </form>
-    </main>
+      </Box>
+    </Container>
   )
 }

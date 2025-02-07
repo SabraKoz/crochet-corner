@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import "./Projects.css"
 import { ProjectFilter } from "./ProjectFilter"
 import { Project } from "./Project"
+import { Box, Container, Grid, Heading } from "@radix-ui/themes"
 
 export const AllProjects = ({ currentUser, allProjects, allTypes, allLevels }) => {
     const [selectType, setSelectType] = useState("")
@@ -23,14 +23,16 @@ export const AllProjects = ({ currentUser, allProjects, allTypes, allLevels }) =
     }, [selectType, selectLevel, allProjects])
 
     return (
-        <div className="projects-container">
-            <h1>Crochet Corner</h1>
+        <Container>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px"}}>
+            <Heading m="5" align="center" size="8" weight="bold" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}} >Crochet Corner</Heading>
             <ProjectFilter allTypes={allTypes} allLevels={allLevels} setSelectType={setSelectType} setSelectLevel={setSelectLevel} />
-                <article className="projects">
+                <Grid columns="3" gap="3">
                     {filteredProjects.map((project) => {
                         return <Project currentUser={currentUser} project={project} key={project.id} />
                     })}
-                </article>
-        </div>
+                </Grid>
+            </Box>
+        </Container>
     )
 }

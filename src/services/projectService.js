@@ -43,3 +43,4 @@ export const deleteProject = (projectId) => {
         method: "DELETE",
     })
 }
+

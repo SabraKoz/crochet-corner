@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { editLikedProject, getUserById, getUserLikedProjects } from "../../services/userService"
 import { Project } from "../Projects/Project"
-import "./User.css"
+import { Box, Container, Grid, Heading } from "@radix-ui/themes"
 
 export const Favorites = ({ currentUser }) => {
     const [likedProjects, setLikedProjects] = useState([])
@@ -27,28 +27,32 @@ export const Favorites = ({ currentUser }) => {
     }, [currentUser])
 
     useEffect(() => {
-        const complete = likedProjects.filter((project) => project.complete === true)
-        const goal = likedProjects.filter((project) => project.complete === false)
+        const complete = likedProjects.filter((like) => like.complete === true)
+        const goal = likedProjects.filter((like) => like.complete === false)
 
         setCompleteProjects(complete)
         setGoalProjects(goal)
     }, [likedProjects])
 
-    const switchCompleteStatus = (projectId) => {
-        const updatedProjects = likedProjects.map(project => project.id === projectId ? {...project, complete: !project.complete} : project)
+    const switchCompleteStatus = (likeId) => {
+        const updatedProjects = likedProjects.map(
+            like => like.id === likeId ? {...like, complete: !like.complete} : like)
         setLikedProjects(updatedProjects)
 
-        const updatedProject = updatedProjects.find(project => project.id === projectId)
-        editLikedProject(updatedProject)
+        const updatedProject = updatedProjects.find(like => like.id === likeId)
+        const { id, userId, projectId, complete } = updatedProject
+        editLikedProject({ id, userId, projectId, complete })
     }
 
     return (
-        <section>
-            <h1>{user?.name}'s Favorite Projects</h1>
-            <div className="favorites-container">
-                <div className="favorite-column">
-                    <h2>~ {goalProjects.length} Project Goals ~</h2>
+        <Container>
+            <Box m="5" style={{ borderRadius: "20px", boxShadow: "0 0 20px gray", background: "rgb(196, 232, 246)", padding: "20px"}}>
+            <Heading m="5" size="7" weight="bold" align="center" style={{ textShadow: "2px 2px 2px rgb(8, 130, 178)"}}>{user?.name}'s Favorite Projects</Heading>
+            <Grid m="5" columns="2" gap="7">
+                <Box m="2">
+                    <Heading mb="5" size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>
                     {goalProjects.map(like => (
+                        <Box mb="6">
                         <Project 
                             key={like.id}
                             project={like.project}
@@ -56,12 +60,14 @@ export const Favorites = ({ currentUser }) => {
                             showComplete={true}
                             isComplete={false}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
+                        </Box>
                     ))}
-                </div>
-
-                <div className="favorite-column">
-                    <h2>~ {completeProjects.length} Projects Completed ~</h2>
+                </Box>
+    
+                <Box m="2">
+                    <Heading mb="5" size="6" weight="bold" align="center">{completeProjects.length} Projects Completed</Heading>
                     {completeProjects.map(like => (
+                        <Box mb="6">
                         <Project 
                             key={like.id}
                             project={like.project}
@@ -69,9 +75,11 @@ export const Favorites = ({ currentUser }) => {
                             showComplete={true}
                             isComplete={true}
                             onToggleComplete={() => switchCompleteStatus(like.id)} />
+                        </Box>
                     ))}
-                </div>
-            </div>
-        </section>
+                </Box>
+            </Grid>
+            </Box>
+        </Container>
     )
 }

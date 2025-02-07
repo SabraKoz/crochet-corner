@@ -1,0 +1,379 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Frodo",
+      "email": "frodo@shiremail.com"
+    },
+    {
+      "id": 2,
+      "name": "Aragorn",
+      "email": "aragorn@rangers.com"
+    },
+    {
+      "id": 3,
+      "name": "Gandalf",
+      "email": "gandalf@wizards.com"
+    },
+    {
+      "id": 4,
+      "name": "Legolas",
+      "email": "legolas@elvesmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Samwise",
+      "email": "samwise@shiremail.com"
+    },
+    {
+      "id": 6,
+      "name": "Arwen",
+      "email": "arwen@rivendell.com"
+    },
+    {
+      "id": 7,
+      "name": "Eowyn",
+      "email": "eowyn@rohanmail.com"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Hat"
+    },
+    {
+      "id": 2,
+      "name": "Scarf"
+    },
+    {
+      "id": 3,
+      "name": "Blanket"
+    },
+    {
+      "id": 4,
+      "name": "Pet Bed"
+    }
+  ],
+  "levels": [
+    {
+      "id": 1,
+      "name": "Beginner"
+    },
+    {
+      "id": 2,
+      "name": "Intermediate"
+    },
+    {
+      "id": 3,
+      "name": "Advanced"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Velvet Infinity Scarf",
+      "body": "1 skein of Bernat Crushed Velvet yarn in Deep Gray color. \n\nChain 26. \nRow 1: Half double crochet (hdc) in second stitch from hook, then half double crochet in each stitch to the end of the chain (25 stitches per row). Chain 1 and turn. \nRow 2: hdc in each stitch across (25 stitches).\n\nContinue until end of skein, leave just enough yarn to attach ends together. \nSingle stitch (or sew) both ends of scarf together to make an infinity scarf.",
+      "skeins": 1,
+      "weight": 5,
+      "hook": "I/9",
+      "image": "/images/crochet.jpg",
+      "userId": 4,
+      "typeId": 2,
+      "levelId": 2
+    },
+    {
+      "id": 2,
+      "title": "Waffle Pattern Throw Blanket",
+      "body": "This blanket can be made with one or many colors of yarn. \nI used 2 colors: main color Ice Blue, accent color Light Gray. \n\nChain in multiples of 3, plus 2. \nFor large throw blanket: Chain 164 in main color. \n\nRow 1: Double crochet (DC) in 4th stitch from hook, and continue in each stitch (141 stitches total in row). Chain 2 and turn (this turning chain counts as the first DC of the next row). \nRow 2: Front Post Double Crochet (fpdc) in next stitch, then DC in next 2 stitches, 1 fpdc. Repeat to the end of row, end with DC in top of previous row's turning chain, chain 2 and turn. \nRow 3: DC in next stitch, fpdc in next 2 stitches, DC in next stitch, continue across.\n\nThis pattern will continue for the rest of the blanket, make it as long as you want, changing colors if you want. \n\nFor this blanket I did 6 rows of Ice Blue, then 4 rows of Light Gray, and back to 6 rows of Ice Blue. \nI added an optional single crochet border.",
+      "skeins": 10,
+      "weight": 4,
+      "hook": "I/9",
+      "image": "/images/waffle-blanket.jpg",
+      "userId": 1,
+      "typeId": 3,
+      "levelId": 3
+    },
+    {
+      "id": 3,
+      "title": "V Stitch Blanket",
+      "body": "This blanket can be made with one or many colors of yarn.\nI used 3 colors: beige, light teal, pale amethyst.\n\nChain 124. \nRow 1: 2 Double Crochet (DC) in 4th stitch from hook, skip 1 chain, 2 DC in next chain, repeat to end, 1 DC in last chain, chain 3 and turn. \nRow 2: 2 DC in middle of each DC pair across, 1 DC into chain, chain 3 and turn.\n\nRepeat until desired length, changing colors if you want.\nFor this blanket I did: \n8 rows of beige\n*1 row of pale amethyst\n2 rows of beige\n2 row of light teal\n1 row of beige\n2 rows of light teal\n2 rows of beige\n1 row of pale amethyst\n6 rows of beige\nRepeat from * and ending with 8 rows of beige.\nI added an optional small border of 2 rows of single crochet in light teal.",
+      "skeins": 8,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/v-stitch-blanket.jpg",
+      "userId": 3,
+      "typeId": 3,
+      "levelId": 2
+    },
+    {
+      "id": 4,
+      "title": "Infinity Hood Scarf",
+      "body": "I used Caron One Pound yarn for this scarf. \n\nChain 225 stitches, slip stitch to first chain to make a big loop, chain 1, pull down and turn.\n\nRow 1: Half Double Crochet (hdc) all around (225 stitches total), chain 1, pull down, turn. \nRow 2: hdc in back/3rd loop around (225 stitches total).\n\nRepeat this pattern until wide enough to cover your head and neck and/or until the skein is gone.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "J/10",
+      "image": "/images/crochet.jpg",
+      "userId": 2,
+      "typeId": 2,
+      "levelId": 3
+    },
+    {
+      "id": 5,
+      "title": "Chunky Blanket",
+      "body": "Bernat Blanket Big yarn\nIt may be easier to hand knit than using a hook or needles.\nYou can tie skeins together, or sew them together for a smoother look and feel.\n\nMake a slip knot, 'cast on' 35 stitches (50 inches wide). \nRow 1: Pull up loops in bumps on chain (35 loops). \nRow 2: Skip first loop, pull up loops across.\n\nRepeat until desired length, cast off stitches. ",
+      "skeins": 10,
+      "weight": 7,
+      "hook": "U/Hands",
+      "image": "/images/crochet.jpg",
+      "userId": 5,
+      "typeId": 3,
+      "levelId": 1
+    },
+    {
+      "id": 6,
+      "title": "Wave Blanket",
+      "body": "Chain in multiples of 12 plus 3. For this blanket I did 156, plus 3.\n\nRow 1: Double crochet (DC) in 4th chain from hook, first 3 chains count as a DC. *1 DC in each of the 3 chains, DC 2 together (before pulling through the last 2 loops in first DC, start another DC in the next stitch and then pull through all loops), do this twice, 1 DC in each of the next 3 chains, 2 DC in next 2 chains (place 2 DC in 1 chain). Repeat from * across to the last chain, 2 DC in last chain. Chain 3 and turn.\nRow 2: DC in next stitch (4th chain from hook), *1 DC in next 3 stitches, 2 DC together twice, 1 DC in next 3 stitches, 2 DC in next 2 stitches. Repeat from * across to the last stitch, 2 DC into last stitch. Chain 3 and turn.\n\nRepeat row 2 until desired length.",
+      "skeins": 12,
+      "weight": 4,
+      "hook": "G/7",
+      "image": "/images/wave-blanket.jpg",
+      "userId": 5,
+      "typeId": 3,
+      "levelId": 1
+    },
+    {
+      "id": 9,
+      "title": "Rainbow Baby Blanket",
+      "body": "I used 4 different colors (Blue, Lavender, Green, Pink), plus a main color (white).\n\nChain 145 with main color.\nRow 1: Using dominate color Double crochet (DC) in 5th chain from hook. Chain 1, skip next chain, 1 DC in next space. Repeat to end.\nRow 2: Change color, chain 1, turn, 1 Single crochet (SC) in first chain space. Chain 1, 1 SC in next space. Repeat to end.\nRow 3: Change to main color. Chain 4, turn, DC in next chain space. Chain 1, 1 DC in next space. Repeat to end.\n\nRepeat rows 2 and 3 until you reach the desired length.\n\nTo hide all the color changes use a fringe or single crochet border.",
+      "skeins": 6,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/rainbow-blanket.jpg",
+      "userId": 6,
+      "typeId": 3,
+      "levelId": 2
+    },
+    {
+      "id": 11,
+      "title": "Slouchy Pattern Hat",
+      "body": "I used Caron Simply Soft yarn for this hat.\n\nMagic Circle - wrap yarn loosely around first 2 fingers of left hand (once or twice), insert hook into top of loop, draw up loop from working yarn, remove fingers, pull loop closed only after all stitches are in place for the foundation.\n\nCluster Stitch – Yarn over, insert hook into stitch, pull up a loop, yarn over, pull through 2 loops, yarn over, insert hook into stitch, pull up a loop, yarn over, pull through 2 loops, yarn over, pull through all 3 loops.\n\nRow 1: Chain 2, place 9 Half Double crochet (hdc) stitches into the loop, slip stitch to join (10).\nRow 2: Chain 2, place 2 hdc into each stitch, slip stitch to join (20).\nRow 3: Chain 2, *hdc in the next stitch, 2 hdc into the next stitch* Repeat * around slip stitch to join (30).\nRow 4: Chain 2, *hdc into the next 2 stitches, 2 hdc into the next stitch* Repeat * around slip stitch to join (40).\nRow 5: Chain 3, *skip the first stitch, cluster stitch into the next stitch, cross over by placing a cluster stitch into the previous skipped stitch* Repeat * to the end of the round and join with a slip stitch into the beginning chain. ( 20 Crossed Clusters).\n\nRepeat Row 5 for 9 more rows (10 rows total of the cluster stitches).\n\nRow 15: Chain 1, *Single crochet (SC) into the next stitch, 2 SC into the next stitch* Repeat * to the end and join with a slip stitch. (60).\nRow 16: Chain 1, SC around join with a slip stitch.\n\nRepeat Row 16 for 4 more rows (5 total rows of single crochet stitches).\nTie off and weave in the ends.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/slouchy-hat.jpg",
+      "userId": 6,
+      "typeId": 1,
+      "levelId": 2
+    },
+    {
+      "title": "Thick Pompom Hat",
+      "body": "I used 2 different color yarns (ice blue and light gray), and tied them together to make a thick, multi-color hat.\n\nStart with a magic circle.\nRow 1: Half Double crochet (hdc) 10 stitches inside the magic circle, and pull the circle tight after all stitches are in, slip stitch to join, chain 1.\nRow 2: 2 hdc in each stitch around, slip stitch to join (20 stitches total), chain 1.\nRow 3: 2 hdc, 1 hdc, repeat around, slip stitch to join (30 stitches total), chain 1.\nRow 4: 2 hdc, 1 hdc in next 2 stitches, repeat around (40 stitches total), chain 1.\nRow 5: 2 hdc, 1 hdc in next 3 stitches, repeat around (50 stitches total), chain 1.\nRow 6: 1 hdc in each stitch around (50 stitches total), chain 1.\n\nRepeat row 6 for 5 more rows.\n\nSwitch to light gray only and an I/9 hook for the band.\nChain 8.\nRow 1: hdc in each stitch on the chain (working back towards the base of the hat), slip stitch to base, and turn.\nRow 2: hdc in back post/third loop in each stitch (7 stitches total), chain 1 and turn.\n\nRepeat this all the way around the hat, attaching the band to the base of the hat along the way.\n\nOptional: make a pompom and pull the tail through the top hole of the hat and secure it.",
+      "skeins": 2,
+      "weight": 4,
+      "hook": "K/10.5",
+      "image": "/images/multi-hat.jpg",
+      "userId": 5,
+      "typeId": 1,
+      "levelId": 3,
+      "id": 12
+    },
+    {
+      "title": "Basket Weave Blanket",
+      "body": "Chain in multiples of 8 plus 4. For this blanket I did 108.\n\nRow 1: Double crochet (DC) in 4th chain from hook (counts as 1 DC), DC in all chains to end, chain 3 and turn.\nRow 2: 3 Front Post DC (fpdc), 4 Back Post DC (bpdc), 4 fpdc, 4 bpdc. Repeat to end, chain 3 and turn.\nRow 3: fpdc in all front posts, bpdc in all back posts, chain 3 and turn.\nRow 4: Repeat row 3.\nRow 5: Now bpdc in all the front posts, and fpdc in all the back posts, chain 3 and turn.\nRow 6-8: fpdc in all front posts, bpdc in all back posts, chain 3 and turn.\n\nRepeat this pattern until desired length: 4 rows stay the same, then switch to the opposite for 4 rows.\nOptional single crochet border hides awkward sides.",
+      "skeins": 8,
+      "weight": 4,
+      "hook": "I/9",
+      "image": "/images/basket-weave-blanket.jpg",
+      "userId": 6,
+      "typeId": 3,
+      "levelId": 3,
+      "id": 13
+    }
+  ],
+  "userProjectLikes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "projectId": 1,
+      "complete": false
+    },
+    {
+      "id": 2,
+      "userId": 6,
+      "projectId": 2,
+      "complete": false
+    },
+    {
+      "id": 3,
+      "userId": 7,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "projectId": 2,
+      "complete": false
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "projectId": 4,
+      "complete": false
+    },
+    {
+      "userId": 6,
+      "projectId": 4,
+      "complete": false,
+      "id": 13
+    },
+    {
+      "id": 15,
+      "userId": 6,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "id": 18,
+      "userId": 1,
+      "projectId": 5,
+      "complete": true
+    },
+    {
+      "userId": 3,
+      "projectId": 4,
+      "complete": false,
+      "id": 19
+    },
+    {
+      "userId": 3,
+      "projectId": 1,
+      "complete": false,
+      "id": 20
+    },
+    {
+      "userId": 3,
+      "projectId": 9,
+      "complete": false,
+      "id": 21
+    },
+    {
+      "id": 22,
+      "userId": 2,
+      "projectId": 3,
+      "complete": true
+    },
+    {
+      "id": 23,
+      "userId": 2,
+      "projectId": 2,
+      "complete": true
+    },
+    {
+      "id": 24,
+      "userId": 2,
+      "projectId": 9,
+      "complete": false
+    },
+    {
+      "id": 25,
+      "userId": 5,
+      "projectId": 6,
+      "complete": true
+    },
+    {
+      "id": 26,
+      "userId": 6,
+      "projectId": 12,
+      "complete": true
+    },
+    {
+      "userId": 7,
+      "projectId": 4,
+      "complete": false,
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "projectId": 11,
+      "complete": false,
+      "id": 30
+    },
+    {
+      "userId": 2,
+      "projectId": 11,
+      "complete": false,
+      "id": 31
+    },
+    {
+      "id": 32,
+      "userId": 2,
+      "projectId": 13,
+      "complete": true
+    },
+    {
+      "userId": 6,
+      "projectId": 3,
+      "complete": false,
+      "id": 33
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "projectId": 9,
+      "userId": 1,
+      "body": "Love the colors!",
+      "timestamp": "2024-12-07T12:00:00.000Z"
+    },
+    {
+      "projectId": 2,
+      "userId": 6,
+      "body": "Love the waffle pattern!",
+      "timestamp": "2025-02-07T20:51:48.875Z",
+      "id": 2
+    },
+    {
+      "projectId": 3,
+      "userId": 6,
+      "body": "Love it!",
+      "timestamp": "2025-02-07T20:56:46.634Z",
+      "id": 3
+    },
+    {
+      "projectId": 9,
+      "userId": 2,
+      "body": "So beautiful!",
+      "timestamp": "2025-02-07T22:26:00.649Z",
+      "id": 4
+    },
+    {
+      "projectId": 13,
+      "userId": 2,
+      "body": "Cool pattern!",
+      "timestamp": "2025-02-07T20:58:53.715Z",
+      "id": 5
+    },
+    {
+      "projectId": 3,
+      "userId": 2,
+      "body": "Did you make this on your way to Isengard? lol",
+      "timestamp": "2025-02-07T22:34:48.560Z",
+      "id": 6
+    },
+    {
+      "projectId": 2,
+      "userId": 2,
+      "body": "FOR FRODO!!!!",
+      "timestamp": "2025-02-07T22:35:17.978Z",
+      "id": 7
+    },
+    {
+      "projectId": 2,
+      "userId": 5,
+      "body": "I can't crochet it for you.. but I can crochet you!",
+      "timestamp": "2025-02-07T22:38:17.515Z",
+      "id": 8
+    }
+  ]
+}
