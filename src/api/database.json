@@ -317,5 +317,42 @@
       "complete": false,
       "id": 33
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "projectId": 9,
+      "userId": 1,
+      "body": "Love the colors!",
+      "timestamp": "2024-12-07T12:00:00.000Z"
+    },
+    {
+      "projectId": 2,
+      "userId": 6,
+      "body": "Love the waffle pattern!",
+      "timestamp": "2025-02-07T20:51:48.875Z",
+      "id": 2
+    },
+    {
+      "projectId": 3,
+      "userId": 6,
+      "body": "Love it!",
+      "timestamp": "2025-02-07T20:56:46.634Z",
+      "id": 3
+    },
+    {
+      "projectId": 9,
+      "userId": 2,
+      "body": "Beautiful!",
+      "timestamp": "2025-02-07T20:58:09.153Z",
+      "id": 4
+    },
+    {
+      "projectId": 13,
+      "userId": 2,
+      "body": "Cool pattern!",
+      "timestamp": "2025-02-07T20:58:53.715Z",
+      "id": 5
+    }
   ]
 }

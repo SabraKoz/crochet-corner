@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
 import { faHeartCrack as faRegularHeart } from "@fortawesome/free-solid-svg-icons"
 import { Box, Button, Card, Container, Grid, Heading, HoverCard, Strong, Text } from "@radix-ui/themes"
+import { ProjectComments } from "./ProjectComments"
 
 export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
     const [project, setProject] = useState([])
@@ -100,6 +101,7 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
                     <Text weight="medium" >Instructions: </Text>
                     <Card m="2" style={{ whiteSpace: "pre-wrap" }} >{project.body}</Card>
                 </Box>
+            <ProjectComments projectId={projectId} currentUser={currentUser} />
             </Box>
         </Container>
     )
