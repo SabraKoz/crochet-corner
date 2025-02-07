@@ -119,7 +119,8 @@ export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, all
                     value={newBody}
                     onChange={(event) => setNewBody(event.target.value)}
                     required
-                    size="3" />
+                    size="3"
+                    resize="vertical" />
             </Box>
             <Button m="5" type="submit" onClick={handleSubmit}>Submit Project</Button>
             </Box>

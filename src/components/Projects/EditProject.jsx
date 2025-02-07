@@ -128,7 +128,8 @@ export const EditProject = ({ getAndSetAllProjects, allTypes, allLevels }) => {
                     value={editProject.body ? editProject.body : ''}
                     onChange={handleInputChange}
                     required
-                    size="3" />
+                    size="3"
+                    resize="vertical" />
             </Box>
             <Button m="5" type="submit" onClick={handleSaveProject}>Save Changes</Button>
             </Box>

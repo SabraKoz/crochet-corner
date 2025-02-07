@@ -188,18 +188,6 @@
       "typeId": 3,
       "levelId": 3,
       "id": 13
-    },
-    {
-      "title": "hat",
-      "body": "Start by making a magic circle",
-      "skeins": 2,
-      "weight": 4,
-      "hook": "I/9",
-      "image": "/images/crochet.jpg",
-      "userId": 2,
-      "typeId": 1,
-      "levelId": 1,
-      "id": 14
     }
   ],
   "userProjectLikes": [
@@ -231,12 +219,6 @@
       "id": 6,
       "userId": 1,
       "projectId": 4,
-      "complete": false
-    },
-    {
-      "id": 8,
-      "userId": 2,
-      "projectId": 1,
       "complete": false
     },
     {
@@ -324,10 +306,16 @@
       "id": 31
     },
     {
+      "id": 32,
       "userId": 2,
       "projectId": 13,
+      "complete": true
+    },
+    {
+      "userId": 6,
+      "projectId": 3,
       "complete": false,
-      "id": 32
+      "id": 33
     }
   ]
 }
