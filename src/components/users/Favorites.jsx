@@ -52,9 +52,8 @@ export const Favorites = ({ currentUser }) => {
                 <Box m="2">
                     <Heading mb="5" size="6" weight="bold" align="center">{goalProjects.length} Project Goals</Heading>
                     {goalProjects.map(like => (
-                        <Box mb="6">
+                        <Box mb="6" key={like.id}>
                         <Project 
-                            key={like.id}
                             project={like.project}
                             currentUser={currentUser}
                             showComplete={true}
@@ -67,9 +66,8 @@ export const Favorites = ({ currentUser }) => {
                 <Box m="2">
                     <Heading mb="5" size="6" weight="bold" align="center">{completeProjects.length} Projects Completed</Heading>
                     {completeProjects.map(like => (
-                        <Box mb="6">
+                        <Box mb="6" key={like.id}>
                         <Project 
-                            key={like.id}
                             project={like.project}
                             currentUser={currentUser}
                             showComplete={true}

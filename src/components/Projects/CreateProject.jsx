@@ -24,7 +24,7 @@ export const CreateProject = ({ getAndSetAllProjects, currentUser, allTypes, all
             skeins: parseInt(newSkeins),
             weight: parseInt(newWeight),
             hook: newHook,
-            image: "/images/crochet.jpg",
+            image: "/images/crochet-star.jpg",
             userId: currentUser.id,
             typeId: parseInt(newType),
             levelId: parseInt(newLevel)

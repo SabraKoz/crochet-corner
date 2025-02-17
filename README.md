@@ -25,7 +25,7 @@ Crochet Corner provides a dedicated space for yarn crafters of all skill levels 
 * CSS
 
 ## ERD
-<img src="./images/Crochet Corner ERD.png">
+<img src="./images/Crochet Corner ERD 2.png">
 
 ## Wireframe 
 <img src="./images/crochet-corner-wireframe.png">

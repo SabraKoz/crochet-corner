@@ -4,7 +4,7 @@ import { getProjectById } from "../../services/projectService"
 import { likeProject, unlikeProject } from "../../services/userService"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons"
-import { faHeartCrack as faRegularHeart } from "@fortawesome/free-solid-svg-icons"
+import { faHeart as faRegularHeart } from "@fortawesome/free-regular-svg-icons"
 import { Box, Button, Card, Container, Grid, Heading, HoverCard, Strong, Text } from "@radix-ui/themes"
 import { ProjectComments } from "./ProjectComments"
 

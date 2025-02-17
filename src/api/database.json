@@ -76,7 +76,7 @@
       "skeins": 1,
       "weight": 5,
       "hook": "I/9",
-      "image": "/images/crochet.jpg",
+      "image": "/images/velvet-infinity.jpg",
       "userId": 4,
       "typeId": 2,
       "levelId": 2
@@ -103,16 +103,16 @@
       "image": "/images/v-stitch-blanket.jpg",
       "userId": 3,
       "typeId": 3,
-      "levelId": 2
+      "levelId": 1
     },
     {
       "id": 4,
       "title": "Infinity Hood Scarf",
-      "body": "I used Caron One Pound yarn for this scarf. \n\nChain 225 stitches, slip stitch to first chain to make a big loop, chain 1, pull down and turn.\n\nRow 1: Half Double Crochet (hdc) all around (225 stitches total), chain 1, pull down, turn. \nRow 2: hdc in back/3rd loop around (225 stitches total).\n\nRepeat this pattern until wide enough to cover your head and neck and/or until the skein is gone.",
-      "skeins": 1,
+      "body": "I used Caron Simply Soft yarn for this scarf. \n\nChain 100 stitches, slip stitch to first chain to make a circle, chain 1, pull down and turn.\n\nRow 1: Half Double Crochet (hdc) in each chain all around (100 stitches total), slip stitch into first hdc (not into the first chain), chain 1, pull down, turn. \nRow 2: hdc in back/3rd loop for each stitch all around (100 stitches total).\n\nRepeat row 2 until wide enough to cover your head and neck and/or until both skeins are gone.",
+      "skeins": 2,
       "weight": 4,
       "hook": "J/10",
-      "image": "/images/crochet.jpg",
+      "image": "/images/hood.jpg",
       "userId": 2,
       "typeId": 2,
       "levelId": 3
@@ -120,11 +120,11 @@
     {
       "id": 5,
       "title": "Chunky Blanket",
-      "body": "Bernat Blanket Big yarn\nIt may be easier to hand knit than using a hook or needles.\nYou can tie skeins together, or sew them together for a smoother look and feel.\n\nMake a slip knot, 'cast on' 35 stitches (50 inches wide). \nRow 1: Pull up loops in bumps on chain (35 loops). \nRow 2: Skip first loop, pull up loops across.\n\nRepeat until desired length, cast off stitches. ",
-      "skeins": 10,
+      "body": "Bernat Blanket Big yarn\n\nIt may be easier to hand knit than using a hook or needles.\nYou can tie skeins together, or sew them together for a smoother look and feel and to take up less yarn.\n\nMake a slip knot (loop the yarn and pull working yarn through the hole, tighten by holding both tails and pulling tight). \nDon't count this first loop as a stitch. \nUse your fingers to measure the size of each loop, these initial chain loops should be about 4 fingers big.\nCast on 40 stitches by pulling the yarn through each new loop (67 inches wide). \n\nRow 1: Pull up loops in bumps on the back of the chain (40 loops). Each stitch should now be between 2-3 fingers big.\nRow 2: Skip the first loop that you just pulled up, pull up loops across.\n\nRepeat row 2 until desired length (this one is 74 inches long).\nCast off by pulling up a bigger loop (back to 4 fingers big), and pulling the new loop through the previous loop. Pull yarn all the way through the very last loop and weave in the tail (option to sew it as well since these chunky yarns easily slip out if they are only weaved in).",
+      "skeins": 11,
       "weight": 7,
       "hook": "U/Hands",
-      "image": "/images/crochet.jpg",
+      "image": "/images/chunky-blanket-1.jpg",
       "userId": 5,
       "typeId": 3,
       "levelId": 1
@@ -188,6 +188,30 @@
       "typeId": 3,
       "levelId": 3,
       "id": 13
+    },
+    {
+      "id": 14,
+      "title": "Chunky Cat Bed",
+      "body": "Bernat Big Blanket yarn\n\nStart by making a slip knot.\n\nRow 1: 6 Single crochets (sc) into slip knot, pull knot tight after all stitches are in.\nRow 2: 2 sc in each stitch around (12 total stitches).\nRow 3: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (16 total stitches).\nRow 4: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (22 total stitches).\nRow 5: *2 sc in first stitch, 1 sc in next 4 stitches, repeat from * all around (26 total stitches).\nRow 6: ",
+      "skeins": 2,
+      "weight": 7,
+      "hook": "U/Hands",
+      "image": "/images/cat-bed.jpg",
+      "userId": 1,
+      "typeId": 4,
+      "levelId": 2
+    },
+    {
+      "title": "Single Crochet Hat",
+      "body": "Start by making a magic circle.",
+      "skeins": 1,
+      "weight": 4,
+      "hook": "H/8",
+      "image": "/images/single-crochet-hat.jpg",
+      "userId": 3,
+      "typeId": 1,
+      "levelId": 1,
+      "id": 15
     }
   ],
   "userProjectLikes": [
@@ -240,10 +264,10 @@
       "complete": true
     },
     {
+      "id": 19,
       "userId": 3,
       "projectId": 4,
-      "complete": false,
-      "id": 19
+      "complete": true
     },
     {
       "userId": 3,
@@ -274,12 +298,6 @@
       "userId": 2,
       "projectId": 9,
       "complete": false
-    },
-    {
-      "id": 25,
-      "userId": 5,
-      "projectId": 6,
-      "complete": true
     },
     {
       "id": 26,
@@ -328,6 +346,84 @@
       "projectId": 3,
       "complete": false,
       "id": 35
+    },
+    {
+      "id": 36,
+      "userId": 3,
+      "projectId": 6,
+      "complete": true
+    },
+    {
+      "id": 37,
+      "userId": 3,
+      "projectId": 14,
+      "complete": true
+    },
+    {
+      "userId": 3,
+      "projectId": 12,
+      "complete": false,
+      "id": 38
+    },
+    {
+      "userId": 3,
+      "projectId": 5,
+      "complete": false,
+      "id": 39
+    },
+    {
+      "id": 40,
+      "userId": 3,
+      "projectId": 2,
+      "complete": true
+    },
+    {
+      "userId": 3,
+      "projectId": 13,
+      "complete": false,
+      "id": 41
+    },
+    {
+      "userId": 3,
+      "projectId": 11,
+      "complete": false,
+      "id": 42
+    },
+    {
+      "id": 44,
+      "userId": 2,
+      "projectId": 1,
+      "complete": true
+    },
+    {
+      "userId": 2,
+      "projectId": 5,
+      "complete": false,
+      "id": 45
+    },
+    {
+      "userId": 2,
+      "projectId": 14,
+      "complete": false,
+      "id": 46
+    },
+    {
+      "userId": 2,
+      "projectId": 15,
+      "complete": false,
+      "id": 47
+    },
+    {
+      "userId": 7,
+      "projectId": 14,
+      "complete": false,
+      "id": 48
+    },
+    {
+      "id": 49,
+      "userId": 5,
+      "projectId": 14,
+      "complete": true
     }
   ],
   "comments": [
@@ -335,162 +431,145 @@
       "id": 1,
       "projectId": 9,
       "userId": 1,
-      "body": "Love the colors!",
-      "timestamp": "2024-12-07T12:00:00.000Z"
+      "body": "Love the colors!"
     },
     {
       "projectId": 2,
       "userId": 6,
-      "body": "Love the waffle pattern!",
-      "timestamp": "2025-02-07T20:51:48.875Z",
+      "body": "Love the waffle pattern",
       "id": 2
     },
     {
       "projectId": 3,
       "userId": 6,
       "body": "Love it!",
-      "timestamp": "2025-02-07T20:56:46.634Z",
       "id": 3
     },
     {
       "projectId": 9,
       "userId": 2,
       "body": "So beautiful!",
-      "timestamp": "2025-02-07T22:26:00.649Z",
       "id": 4
     },
     {
       "projectId": 13,
       "userId": 2,
       "body": "Cool pattern!",
-      "timestamp": "2025-02-07T20:58:53.715Z",
       "id": 5
     },
     {
       "projectId": 3,
       "userId": 2,
       "body": "Did you make this on your way to Isengard? lol",
-      "timestamp": "2025-02-07T22:34:48.560Z",
       "id": 6
     },
     {
       "projectId": 2,
       "userId": 2,
       "body": "FOR FRODO!!!!",
-      "timestamp": "2025-02-07T22:35:17.978Z",
       "id": 7
     },
     {
       "projectId": 2,
       "userId": 5,
       "body": "I can't crochet it for you.. but I can crochet you!",
-      "timestamp": "2025-02-07T22:38:17.515Z",
       "id": 8
     },
     {
       "projectId": 13,
       "userId": 5,
       "body": "It’s the job that’s never started as takes longest to finish",
-      "timestamp": "2025-02-07T23:00:39.034Z",
       "id": 9
     },
     {
       "projectId": 2,
       "userId": 3,
       "body": "Keep it secret, keep it safe",
-      "timestamp": "2025-02-07T23:01:52.899Z",
       "id": 10
     },
     {
-      "projectId": 1,
+      "projectId": 14,
       "userId": 3,
-      "body": "All we have to decide is what to do with the time that is given us",
-      "timestamp": "2025-02-07T23:03:23.972Z",
+      "body": "All we have to decide is what to crochet with the yarn that is given us",
       "id": 11
     },
     {
       "projectId": 9,
       "userId": 3,
       "body": "The board is set, the pieces are moving. We come to it at last, the great blanket of our time",
-      "timestamp": "2025-02-07T23:04:07.142Z",
       "id": 12
     },
     {
       "projectId": 6,
       "userId": 3,
-      "body": "You shall not pass!",
-      "timestamp": "2025-02-07T23:05:04.864Z",
+      "body": "You shall not craft!",
       "id": 13
     },
     {
       "projectId": 12,
       "userId": 3,
       "body": "Crochet, you fools!",
-      "timestamp": "2025-02-07T23:05:49.743Z",
       "id": 14
     },
     {
       "projectId": 11,
       "userId": 3,
       "body": "Do not be so quick to deal out death and judgment. Even the very wise do not see all stitches",
-      "timestamp": "2025-02-07T23:07:35.384Z",
       "id": 15
     },
     {
       "projectId": 5,
       "userId": 3,
       "body": "Not all those who craft are lost",
-      "timestamp": "2025-02-07T23:08:22.940Z",
       "id": 16
     },
     {
       "projectId": 3,
       "userId": 1,
       "body": "You're late!",
-      "timestamp": "2025-02-07T23:09:01.572Z",
       "id": 17
     },
     {
       "projectId": 3,
       "userId": 3,
       "body": "A wizard is never late, Frodo Baggins. Nor is he early; he crochets precisely when he means to",
-      "timestamp": "2025-02-07T23:09:46.902Z",
       "id": 18
     },
     {
       "projectId": 6,
       "userId": 4,
       "body": "A red sun rises, yarn has been spilled this night",
-      "timestamp": "2025-02-07T23:12:00.337Z",
       "id": 19
     },
     {
       "projectId": 4,
       "userId": 4,
       "body": "Your friends are with you, Aragorn",
-      "timestamp": "2025-02-07T23:12:25.477Z",
       "id": 20
     },
     {
       "projectId": 3,
       "userId": 4,
       "body": "They're taking the blankets to Isengard!",
-      "timestamp": "2025-02-07T23:13:08.986Z",
       "id": 21
     },
     {
       "projectId": 4,
       "userId": 6,
       "body": "I would rather share one crochet pattern with you than face all the ages of this world alone",
-      "timestamp": "2025-02-07T23:14:25.292Z",
       "id": 22
     },
     {
       "projectId": 2,
       "userId": 6,
       "body": "Your time will come. You will face the same yarn, and you will crochet it",
-      "timestamp": "2025-02-07T23:15:53.192Z",
       "id": 23
+    },
+    {
+      "projectId": 1,
+      "userId": 2,
+      "body": "Then I will crochet as one of them!",
+      "id": 24
     }
   ]
 }

@@ -17,8 +17,7 @@ export const ProjectComments = ({ projectId, currentUser }) => {
         const commentObj = {
             projectId: parseInt(projectId),
             userId: currentUser.id,
-            body: newComment,
-            timestamp: new Date().toISOString()
+            body: newComment
         }
 
         postNewComment(commentObj).then(() => {
@@ -38,8 +37,7 @@ export const ProjectComments = ({ projectId, currentUser }) => {
         const updatedComment = {
             projectId: editedComment.projectId,
             userId: editedComment.userId,
-            body: editedComment.body,
-            timestamp: new Date().toISOString()
+            body: editedComment.body
         }
 
         editComment(comment.id, updatedComment).then(() => {
@@ -69,7 +67,6 @@ export const ProjectComments = ({ projectId, currentUser }) => {
                 <Card key={comment.id} m="2" >
                     <Box style={{ display: "flex", justifyContent: "space-between" }} >
                         <Text weight="bold">{comment.user?.name}</Text>
-                        <Text>{new Date(comment.timestamp).toLocaleDateString()}</Text>
                     </Box>
                     <Box m="2">{comment.body}</Box>
                     {currentUser.id === comment.userId && (
