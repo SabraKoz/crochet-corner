@@ -103,7 +103,7 @@
       "image": "/images/v-stitch-blanket.jpg",
       "userId": 3,
       "typeId": 3,
-      "levelId": 1
+      "levelId": 2
     },
     {
       "id": 4,
@@ -192,7 +192,7 @@
     {
       "id": 14,
       "title": "Chunky Cat Bed",
-      "body": "Bernat Big Blanket yarn\n\nStart by making a slip knot.\n\nRow 1: 6 Single crochets (sc) into slip knot, pull knot tight after all stitches are in.\nRow 2: 2 sc in each stitch around (12 total stitches).\nRow 3: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (16 total stitches).\nRow 4: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (22 total stitches).\nRow 5: *2 sc in first stitch, 1 sc in next 4 stitches, repeat from * all around (26 total stitches).\nRow 6: ",
+      "body": "Bernat Big Blanket yarn\n\nStart by making a slip knot.\n\nRow 1: 6 Single crochets (sc) into slip knot, pull knot tight after all stitches are in.\nRow 2: 2 sc in each stitch around (12 total stitches).\nRow 3: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (16 total stitches).\nRow 4: *2 sc in first stitch, 1 sc in next 2 stitches, repeat from * all around (22 total stitches).\nRow 5: *2 sc in first stitch, 1 sc in next 4 stitches, repeat from * all around (26 total stitches).\nRow 6-10: 1 sc in each stitch (26 total stitches).\n\nFold inward and use tail to sew the end into the base, this is optional but makes the sides thicker and holds shape better.",
       "skeins": 2,
       "weight": 7,
       "hook": "U/Hands",
@@ -202,16 +202,16 @@
       "levelId": 2
     },
     {
+      "id": 15,
       "title": "Single Crochet Hat",
-      "body": "Start by making a magic circle.",
+      "body": "Start by making a magic circle.\n\nRow 1: 10 Single crochet (sc) into magic circle, then pull circle tight, slip stitch to join, chain 1, pull down and turn.\nRow 2: 2 sc into each stitch around (20 stitches total), slip stitch to join, chain 1, pull down and turn.\nRow 3: *1 sc into next 2 stitches, 2 sc in next stitch. Repeat from * around (26 stitches total), slip stitch, chain 1, pull down and turn.\nRow 4: *1 sc into next 3 stitches, 2 sc in next stitch. Repeat from * around (32 stitches total), slip stitch, chain 1, pull down and turn.\nRow 5: *1 sc into next 4 stitches, 2 sc in next stitch. Repeat from * around (38 stitches total), slip stitch, chain 1, pull down and turn.\nRow 6-21: 1 sc in each stitch around (38 stitches total), slip stitch, chain 1, pull down and turn.\nRow 22: 1 slip stitch in each stitch around, join together and weave in tail.",
       "skeins": 1,
       "weight": 4,
       "hook": "H/8",
       "image": "/images/single-crochet-hat.jpg",
       "userId": 3,
       "typeId": 1,
-      "levelId": 1,
-      "id": 15
+      "levelId": 1
     }
   ],
   "userProjectLikes": [
@@ -219,12 +219,6 @@
       "id": 1,
       "userId": 1,
       "projectId": 1,
-      "complete": false
-    },
-    {
-      "id": 2,
-      "userId": 6,
-      "projectId": 2,
       "complete": false
     },
     {
@@ -246,16 +240,16 @@
       "complete": false
     },
     {
+      "id": 13,
       "userId": 6,
       "projectId": 4,
-      "complete": false,
-      "id": 13
+      "complete": false
     },
     {
       "id": 15,
       "userId": 6,
       "projectId": 1,
-      "complete": true
+      "complete": false
     },
     {
       "id": 18,
@@ -268,12 +262,6 @@
       "userId": 3,
       "projectId": 4,
       "complete": true
-    },
-    {
-      "userId": 3,
-      "projectId": 1,
-      "complete": false,
-      "id": 20
     },
     {
       "userId": 3,
@@ -300,12 +288,6 @@
       "complete": false
     },
     {
-      "id": 26,
-      "userId": 6,
-      "projectId": 12,
-      "complete": true
-    },
-    {
       "userId": 7,
       "projectId": 4,
       "complete": false,
@@ -328,12 +310,6 @@
       "userId": 2,
       "projectId": 13,
       "complete": true
-    },
-    {
-      "userId": 6,
-      "projectId": 3,
-      "complete": false,
-      "id": 33
     },
     {
       "id": 34,
@@ -370,12 +346,6 @@
       "projectId": 5,
       "complete": false,
       "id": 39
-    },
-    {
-      "id": 40,
-      "userId": 3,
-      "projectId": 2,
-      "complete": true
     },
     {
       "userId": 3,
@@ -423,6 +393,18 @@
       "id": 49,
       "userId": 5,
       "projectId": 14,
+      "complete": true
+    },
+    {
+      "userId": 3,
+      "projectId": 2,
+      "complete": false,
+      "id": 50
+    },
+    {
+      "id": 51,
+      "userId": 3,
+      "projectId": 1,
       "complete": true
     }
   ],
@@ -570,6 +552,12 @@
       "userId": 2,
       "body": "Then I will crochet as one of them!",
       "id": 24
+    },
+    {
+      "projectId": 15,
+      "userId": 1,
+      "body": "They don't know this hat is here... do they, Gandalf?",
+      "id": 25
     }
   ]
 }

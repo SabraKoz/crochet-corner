@@ -45,7 +45,6 @@ export const ProjectDetails = ({ getAndSetAllProjects, currentUser }) => {
         likeProject(newUserProjectLikeObj).then(() => {
             getAndSetProject()
             getAndSetAllProjects()
-            navigate("/favorites")
         })
     }
 

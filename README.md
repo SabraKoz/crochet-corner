@@ -4,7 +4,7 @@ A social platform for crochet enthusiasts to share projects they created, track 
 
 ## Purpose
 
-Crochet Corner provides a dedicated space for yarn crafters of all skill levels to document and share their work and to engage and find inspiration within a crafting community, addressing the need for project organization and social connection. 
+Crochet Corner provides a dedicated space for yarn crafters of all skill levels to document and share their work and to engage and find inspiration, addressing the need for project organization and social connection. 
 
 ## Features
 
