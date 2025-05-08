@@ -62,4 +62,4 @@ Sabra Kozlina
 
 [GitHub](https://github.com/SabraKoz)
 
-[LinkedIn](https://www.linkedin.com/in/sabra-kozlina-baa0911b7)
+[LinkedIn](https://www.linkedin.com/in/sabra-kozlina)
