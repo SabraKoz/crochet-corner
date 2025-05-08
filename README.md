@@ -39,7 +39,7 @@ cd crochet-corner
 2. Install packages:
 ```sh
 npm install
-npm install json-server
+npm install json-server@0.17.4
 npm install @radix-ui/themes
 ```
 3. Start JSON server database:
