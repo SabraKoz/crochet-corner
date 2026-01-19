@@ -52,18 +52,18 @@ export const Project = ({ currentUser, project, showEdit, showDelete, onDelete, 
                     <Button m="1" onClick={() => navigate(`/projects/${project.id}/edit`)}>Edit</Button>
                     <AlertDialog.Root>
                     <AlertDialog.Trigger asChild >
-                        <Button m="1">Delete</Button>
+                        <Button m="1" color="red">Delete</Button>
                     </AlertDialog.Trigger>
                     <AlertDialog.Content style={{textAlign: "center", backgroundColor: "rgb(222, 242, 250)"}} >
                         <AlertDialog.Title m="3">Delete Project</AlertDialog.Title>
                         <AlertDialog.Description m="3">Are you sure you want to permanently delete "{project.title}"</AlertDialog.Description>
                         <Box>
+                            <AlertDialog.Action>
+                                <Button m="3" color="red" onClick={() => onDelete(project.id)}>Delete</Button>
+                            </AlertDialog.Action>
                             <AlertDialog.Cancel asChild>
                                 <Button m="3">Cancel</Button>
                             </AlertDialog.Cancel>
-                            <AlertDialog.Action>
-                                <Button m="3" onClick={() => onDelete(project.id)}>Delete</Button>
-                            </AlertDialog.Action>
                         </Box>
                     </AlertDialog.Content>
                     </AlertDialog.Root>
