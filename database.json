@@ -216,12 +216,6 @@
   ],
   "userProjectLikes": [
     {
-      "id": 1,
-      "userId": 1,
-      "projectId": 1,
-      "complete": false
-    },
-    {
       "id": 3,
       "userId": 7,
       "projectId": 1,
@@ -376,24 +370,6 @@
       "projectId": 2,
       "complete": false,
       "id": 50
-    },
-    {
-      "id": 51,
-      "userId": 3,
-      "projectId": 1,
-      "complete": true
-    },
-    {
-      "userId": "1",
-      "projectId": 1,
-      "complete": false,
-      "id": 52
-    },
-    {
-      "id": 53,
-      "userId": 1,
-      "projectId": 3,
-      "complete": true
     }
   ],
   "comments": [
