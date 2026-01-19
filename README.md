@@ -38,15 +38,12 @@ cd crochet-corner
 ```
 2. Install packages:
 ```sh
-npm install
 npm install json-server@0.17.4
 npm install @radix-ui/themes
 ```
 3. Start JSON server database:
 ```sh
-cd src
-cd api
-json-server -p 8088 database.json
+npx json-server --watch database.json --port 8088
 ```
 4. Launch application:
 * In a new terminal: 
