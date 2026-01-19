@@ -330,12 +330,6 @@
       "complete": true
     },
     {
-      "id": 37,
-      "userId": 3,
-      "projectId": 14,
-      "complete": true
-    },
-    {
       "userId": 3,
       "projectId": 12,
       "complete": false,
@@ -373,27 +367,9 @@
     },
     {
       "userId": 2,
-      "projectId": 14,
-      "complete": false,
-      "id": 46
-    },
-    {
-      "userId": 2,
       "projectId": 15,
       "complete": false,
       "id": 47
-    },
-    {
-      "userId": 7,
-      "projectId": 14,
-      "complete": false,
-      "id": 48
-    },
-    {
-      "id": 49,
-      "userId": 5,
-      "projectId": 14,
-      "complete": true
     },
     {
       "userId": 3,
@@ -405,6 +381,18 @@
       "id": 51,
       "userId": 3,
       "projectId": 1,
+      "complete": true
+    },
+    {
+      "userId": "1",
+      "projectId": 1,
+      "complete": false,
+      "id": 52
+    },
+    {
+      "id": 53,
+      "userId": 1,
+      "projectId": 3,
       "complete": true
     }
   ],
@@ -468,12 +456,6 @@
       "userId": 3,
       "body": "Keep it secret, keep it safe",
       "id": 10
-    },
-    {
-      "projectId": 14,
-      "userId": 3,
-      "body": "All we have to decide is what to crochet with the yarn that is given us",
-      "id": 11
     },
     {
       "projectId": 9,
